@@ -1,7 +1,7 @@
 ---
-title: "Statistical Modeling"
-subtitle: "Stanford University, Hopkins Marine Station"
-author: "Winter 2019"
+title: "Robin Elahi - teaching at Hopkins Marine Station"
+subtitle: "Stanford University"
+#author: "Winter 2019"
 #date: "Instructor: Robin Elahi"
 output: 
   html_document: 

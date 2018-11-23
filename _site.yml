@@ -1,11 +1,13 @@
-name: Statistical Modeling
+name: Robin Elahi
 output_dir: "."
 navbar:
-  title: "BIOHOPK-140H"
+  title: "Teaching at Hopkins Marine Station"
   left:
     - text: "Overview"
       href: index.html
-    - text: "Setup-computer"
-      href: 00-setup-computer.html
-    - text: "Setup-rstan"
-      href: 00-setup-rstan.html
+    - text: "Setup-R"
+      href: 00-setup-R.html
+    - text: "Setup-git"
+      href: 01-setup-git.html
+    - text: "Setup-Rstan"
+      href: 02-setup-rstan.html
