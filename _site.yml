@@ -9,5 +9,3 @@ navbar:
     #  href: 01-setup-git.html
     - text: "Setup-Rstan"
       href: 02-setup-rstan.html
-    - text: "Test"
-      href: BayesTheoremAnswers.html

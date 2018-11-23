@@ -186,9 +186,6 @@ $(document).ready(function () {
 <li>
   <a href="02-setup-rstan.html">Setup-Rstan</a>
 </li>
-<li>
-  <a href="BayesTheoremAnswers.html">Test</a>
-</li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
         
@@ -208,6 +205,8 @@ $(document).ready(function () {
 
 <div id="installing-stan-and-rstan" class="section level2">
 <h2>Installing stan and rstan</h2>
+<p>These instructions are based on:<br />
+<a href="https://github.com/stan-dev/rstan/wiki/RStan-Getting-Started" class="uri">https://github.com/stan-dev/rstan/wiki/RStan-Getting-Started</a> and <a href="https://github.com/rmcelreath/rethinking" class="uri">https://github.com/rmcelreath/rethinking</a></p>
 <p>Go to <code>http://mc-stan.org</code> and follow the instructions for your platform. The biggest challenge is getting a C++ compiler configured to work with your installation of R. The instructions at the <a href="https://github.com/stan-dev/rstan/wiki/RStan-Getting-Started">rstan getting started website</a> are quite thorough.</p>
 <p>Installing Stan can be a bit complicated on some machines, especially if you haven’t run programs that require a C++ compiler before (if that sentance doesn’t make sense to you, this means you), so please don’t wait until the morning of the workshop to install Stan. Try to install it a few days beforehand, and if you can’t get it to work let me know and I’ll try to help.</p>
 <p>To check that it works, once you’ve succesfully done all the other steps please open R and run the code below. If it works, you’re good to go!</p>
@@ -239,12 +238,6 @@ traceplot(fit)</code></pre>
 <h3><code>rethinking</code></h3>
 <p>Details on the <code>rethinking</code> package:<br />
 <a href="https://xcelab.net/rm/software/" class="uri">https://xcelab.net/rm/software/</a></p>
-<hr />
-<blockquote>
-<p>Attribution<br />
-This tutorial is based on:<br />
-<a href="https://github.com/stan-dev/rstan/wiki/RStan-Getting-Started" class="uri">https://github.com/stan-dev/rstan/wiki/RStan-Getting-Started</a> and <a href="https://github.com/rmcelreath/rethinking" class="uri">https://github.com/rmcelreath/rethinking</a></p>
-</blockquote>
 </div>
 </div>
 
