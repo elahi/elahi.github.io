@@ -19,9 +19,6 @@
 <script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
 <script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
 <script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
-<script src="site_libs/jqueryui-1.11.4/jquery-ui.min.js"></script>
-<link href="site_libs/tocify-1.9.1/jquery.tocify.css" rel="stylesheet" />
-<script src="site_libs/tocify-1.9.1/jquery.tocify.js"></script>
 <script src="site_libs/navigation-1.1/tabsets.js"></script>
 <link href="site_libs/highlightjs-9.12.0/default.css" rel="stylesheet" />
 <script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
@@ -169,101 +166,6 @@ $(document).ready(function () {
 
 
 
-<script>
-$(document).ready(function ()  {
-
-    // move toc-ignore selectors from section div to header
-    $('div.section.toc-ignore')
-        .removeClass('toc-ignore')
-        .children('h1,h2,h3,h4,h5').addClass('toc-ignore');
-
-    // establish options
-    var options = {
-      selectors: "h1,h2,h3",
-      theme: "bootstrap3",
-      context: '.toc-content',
-      hashGenerator: function (text) {
-        return text.replace(/[.\\/?&!#<>]/g, '').replace(/\s/g, '_').toLowerCase();
-      },
-      ignoreSelector: ".toc-ignore",
-      scrollTo: 0
-    };
-    options.showAndHide = true;
-    options.smoothScroll = true;
-
-    // tocify
-    var toc = $("#TOC").tocify(options).data("toc-tocify");
-});
-</script>
-
-<style type="text/css">
-
-#TOC {
-  margin: 25px 0px 20px 0px;
-}
-@media (max-width: 768px) {
-#TOC {
-  position: relative;
-  width: 100%;
-}
-}
-
-
-.toc-content {
-  padding-left: 30px;
-  padding-right: 40px;
-}
-
-div.main-container {
-  max-width: 1200px;
-}
-
-div.tocify {
-  width: 20%;
-  max-width: 260px;
-  max-height: 85%;
-}
-
-@media (min-width: 768px) and (max-width: 991px) {
-  div.tocify {
-    width: 25%;
-  }
-}
-
-@media (max-width: 767px) {
-  div.tocify {
-    width: 100%;
-    max-width: none;
-  }
-}
-
-.tocify ul, .tocify li {
-  line-height: 20px;
-}
-
-.tocify-subheader .tocify-item {
-  font-size: 0.90em;
-  padding-left: 25px;
-  text-indent: 0;
-}
-
-.tocify .list-group-item {
-  border-radius: 0px;
-}
-
-
-</style>
-
-<!-- setup 3col/9col grid for toc_float and main content  -->
-<div class="row-fluid">
-<div class="col-xs-12 col-sm-4 col-md-3">
-<div id="TOC" class="tocify">
-</div>
-</div>
-
-<div class="toc-content col-xs-12 col-sm-8 col-md-9">
-
-
 
 
 <div class="navbar navbar-default  navbar-fixed-top" role="navigation">
@@ -279,9 +181,6 @@ div.tocify {
     <div id="navbar" class="navbar-collapse collapse">
       <ul class="nav navbar-nav">
         <li>
-  <a href="index.html">Overview</a>
-</li>
-<li>
   <a href="00-setup-R.html">Setup-R</a>
 </li>
 <li>
@@ -307,26 +206,9 @@ div.tocify {
 </div>
 
 
-<div id="acknowledgements-and-sources" class="section level2">
-<h2>Acknowledgements and sources</h2>
-<p>test</p>
-<p>This tutorial is based on other tutorials that I found on the web. I pirated shamelessly from these awesome sources:</p>
-<ul>
-<li><a href="https://github.com/stan-dev/rstan/wiki/RStan-Getting-Started" class="uri">https://github.com/stan-dev/rstan/wiki/RStan-Getting-Started</a></li>
-<li><a href="http://mc-stan.org/bayesplot/articles/index.html" class="uri">http://mc-stan.org/bayesplot/articles/index.html</a></li>
-<li><a href="https://github.com/rmcelreath/rethinking" class="uri">https://github.com/rmcelreath/rethinking</a></li>
-<li><a href="https://github.com/DanOvando/learn-stan" class="uri">https://github.com/DanOvando/learn-stan</a></li>
-<li><a href="https://github.com/danilofreire/r-scripts/blob/master/stan-logistic-regression.R" class="uri">https://github.com/danilofreire/r-scripts/blob/master/stan-logistic-regression.R</a></li>
-</ul>
-<p>There are many texts on Bayesian data analysis. Here are two that I found quite helpful in getting started:</p>
-<ul>
-<li><a href="https://press.princeton.edu/titles/10523.html">“Bayesian Models: A Statistical Primer for Ecologists”</a></li>
-<li><a href="http://xcelab.net/rm/statistical-rethinking/">“Statistical Rethinking”</a></li>
-</ul>
-</div>
 <div id="installing-stan-and-rstan" class="section level2">
 <h2>Installing stan and rstan</h2>
-<p>We are going to use <code>rstan</code> to fit our Bayesian models. So, you’ll need to install <code>rstan</code> before class. Go to <code>http://mc-stan.org</code> and follow the instructions for your platform. The biggest challenge is getting a C++ compiler configured to work with your installation of R. The instructions at the <a href="https://github.com/stan-dev/rstan/wiki/RStan-Getting-Started">rstan getting started website</a> are quite thorough.</p>
+<p>Go to <code>http://mc-stan.org</code> and follow the instructions for your platform. The biggest challenge is getting a C++ compiler configured to work with your installation of R. The instructions at the <a href="https://github.com/stan-dev/rstan/wiki/RStan-Getting-Started">rstan getting started website</a> are quite thorough.</p>
 <p>Installing Stan can be a bit complicated on some machines, especially if you haven’t run programs that require a C++ compiler before (if that sentance doesn’t make sense to you, this means you), so please don’t wait until the morning of the workshop to install Stan. Try to install it a few days beforehand, and if you can’t get it to work let me know and I’ll try to help.</p>
 <p>To check that it works, once you’ve succesfully done all the other steps please open R and run the code below. If it works, you’re good to go!</p>
 <pre class="r"><code>library(rstan)
@@ -355,15 +237,19 @@ print(fit)
 traceplot(fit)</code></pre>
 <div id="rethinking" class="section level3">
 <h3><code>rethinking</code></h3>
-<p>You’re almost done. Now all you need is the <code>rethinking</code> package:<br />
+<p>Details on the <code>rethinking</code> package:<br />
 <a href="https://xcelab.net/rm/software/" class="uri">https://xcelab.net/rm/software/</a></p>
+<hr />
+<blockquote>
+<p>Attribution<br />
+This tutorial is based on:<br />
+<a href="https://github.com/stan-dev/rstan/wiki/RStan-Getting-Started" class="uri">https://github.com/stan-dev/rstan/wiki/RStan-Getting-Started</a> and <a href="https://github.com/rmcelreath/rethinking" class="uri">https://github.com/rmcelreath/rethinking</a></p>
+</blockquote>
 </div>
 </div>
 
 
 
-</div>
-</div>
 
 </div>
 

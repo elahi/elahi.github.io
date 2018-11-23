@@ -1,11 +1,9 @@
 ---
-title: "Robin Elahi - teaching at Hopkins Marine Station"
-subtitle: "Stanford University"
-#author: "Winter 2019"
-#date: "Instructor: Robin Elahi"
+title: "Robin Elahi, PhD"
+subtitle: "Hopkins Marine Station, Stanford University"
 output: 
   html_document: 
-    toc: true
+    toc: false
     toc_depth: 3
     toc_float: true
     theme: cosmo
@@ -15,4 +13,11 @@ output:
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-## All of my teaching
+I am a lecturer at Stanford University’s Hopkins Marine Station. This site serves as the central repository of computer set-up pages - see the navigation bar above. 
+
+These set-up pages are referenced in the courses and workshops that I teach, listed below:
+
+- [Statistical Modeling](https://elahi.github.io/biohopk-140h/)
+
+
+
