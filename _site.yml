@@ -1,0 +1,11 @@
+name: Statistical Modeling
+output_dir: "."
+navbar:
+  title: "BIOHOPK-140H"
+  left:
+    - text: "Overview"
+      href: index.html
+    - text: "Setup-computer"
+      href: 00-setup-computer.html
+    - text: "Setup-rstan"
+      href: 00-setup-rstan.html
