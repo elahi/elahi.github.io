@@ -3,9 +3,15 @@ output_dir: "."
 navbar:
   title: "Teaching at Hopkins Marine Station"
   left:
-    - text: "Setup-R"
-      href: 00-setup-R.html
-    #- text: "Setup-git"
-    #  href: 01-setup-git.html
-    - text: "Setup-Rstan"
-      href: 02-setup-rstan.html
+    - text: "Setup"
+      menu:
+        - text: "Setup-R"
+          href: 00-setup-R.html
+        - text: "Setup-Rstan"
+          href: 00-setup-rstan.html
+    - text: "Tutorials"
+      menu:
+        - text: "Intro-R"
+          href: 01-A-R-intro.html
+        - text: "Intro-Rmarkdown"
+          href: 01-B-Rmarkdown-intro.html

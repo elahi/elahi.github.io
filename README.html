@@ -180,11 +180,35 @@ $(document).ready(function () {
     </div>
     <div id="navbar" class="navbar-collapse collapse">
       <ul class="nav navbar-nav">
-        <li>
-  <a href="00-setup-R.html">Setup-R</a>
+        <li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+    Setup
+     
+    <span class="caret"></span>
+  </a>
+  <ul class="dropdown-menu" role="menu">
+    <li>
+      <a href="00-setup-R.html">Setup-R</a>
+    </li>
+    <li>
+      <a href="00-setup-rstan.html">Setup-Rstan</a>
+    </li>
+  </ul>
 </li>
-<li>
-  <a href="02-setup-rstan.html">Setup-Rstan</a>
+<li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+    Tutorials
+     
+    <span class="caret"></span>
+  </a>
+  <ul class="dropdown-menu" role="menu">
+    <li>
+      <a href="01-A-R-intro.html">Intro-R</a>
+    </li>
+    <li>
+      <a href="01-B-Rmarkdown-intro.html">Intro-Rmarkdown</a>
+    </li>
+  </ul>
 </li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
