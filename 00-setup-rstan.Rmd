@@ -1,5 +1,5 @@
 ---
-title: "Setup - Rstan"
+title: "Setup - RStan"
 output: 
   html_document: 
     toc: false
@@ -12,12 +12,11 @@ output:
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-## Installing stan and rstan
+## Installing Stan and RStan
 
-These instructions are based on:  
-https://github.com/stan-dev/rstan/wiki/RStan-Getting-Started and        https://github.com/rmcelreath/rethinking
+These instructions are from:    https://github.com/rmcelreath/rethinking
 
-Go to ``http://mc-stan.org`` and follow the instructions for your platform. The biggest challenge is getting a C++ compiler configured to work with your installation of R. The instructions at the [rstan getting started website](https://github.com/stan-dev/rstan/wiki/RStan-Getting-Started) are quite thorough. 
+Go to ``http://mc-stan.org`` and follow the instructions for your platform. The biggest challenge is getting a C++ compiler configured to work with your installation of R. The instructions at the [RStan getting started website](https://github.com/stan-dev/rstan/wiki/RStan-Getting-Started) are quite thorough. 
 
 Installing Stan can be a bit complicated on some machines, especially if you haven't run programs that require a C++ compiler before (if that sentance doesn't make sense to you, this means you), so please don't wait until the morning of the workshop to install Stan. Try to install it a few days beforehand, and if you can't get it to work let me know and I'll try to help. 
 
@@ -51,7 +50,15 @@ traceplot(fit)
 
 ```
 
-### `rethinking`
+### Installing `rethinking`
 
-Details on the `rethinking` package:  
+Then you can install `rethinking` from within R using:  
+
+```{r, echo = TRUE, eval = FALSE}
+install.packages(c("coda","mvtnorm","devtools","loo"))
+library(devtools)
+devtools::install_github("rmcelreath/rethinking")
+```
+
+More details on `rethinking` and other packages by Richard McElreath:  
 https://xcelab.net/rm/software/
