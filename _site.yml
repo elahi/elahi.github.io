@@ -1,7 +1,7 @@
 name: Robin Elahi
 output_dir: "."
 navbar:
-  title: "Teaching at Hopkins Marine Station"
+  title: "Home"
   left:
     - text: "Setup"
       menu:
