@@ -13,11 +13,63 @@ output:
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-I am a lecturer at Stanford University’s Hopkins Marine Station. This site serves as the central repository of computer set-up pages - see the navigation bar above. 
+I am a lecturer at Stanford University's Hopkins Marine Station, where I teach courses in kelp forest ecology, statistics, and scientific computing. This site serves as the central teaching repository. I also maintain some relevant material for setting up R and related software - see the navigation bar above for details. 
 
-These set-up pages are referenced in the courses and workshops that I teach, listed below:
+\  
 
-- [Statistical Modeling](https://elahi.github.io/biohopk-140h/)
+## Courses
 
+A list of the courses offered at Hopkins Marine Station can be found here:     
 
+[https://exploredegrees.stanford.edu/coursedescriptions/biohopk/](https://exploredegrees.stanford.edu/coursedescriptions/biohopk/)
+
+A bit more info on my upcoming courses can be found below:
+
+\  
+
+### Statistical Modeling (Biohopk-140h)
+
+Introduction to applied statistical modeling in a Bayesian framework. Topics will include probability, regression, model comparison, and hierarchical modeling. We will take a hands-on, computational approach (R, Stan) to gain intuition so that students can later design their own inferential models. Prerequisites for this course include introductory statistics and some calculus or linear algebra, as well as previous exposure to scientific computing. Open to graduate students; undergraduate students may enroll with consent of instructor.
+
+Offered Winter 2019.   
+[https://elahi.github.io/biohopk-140h/](https://elahi.github.io/biohopk-140h/)
+
+\  
+
+### Experimental Design and Probability (Biohopk-174h)
+
+Variability is an integral part of biology. Introduction to probability and its use in designing experiments to address biological problems. Focus is on experimental design and the use of linear models in testing hypotheses (e.g., analysis of variance, regression). Students will use R to explore and analyze locally relevant biological datasets. No programming or statistical background is assumed. 
+
+Offered Spring 2019. 
+
+\  
+
+### Introduction to Research in Ecology and Ecological Physiology (Biohopk-47)
+
+This course is a field-based inquiry into rocky intertidal shores that introduces students to ecology and environmental physiology and the research methods used to study them. Students will learn how to detect patterns quantitatively in nature through appropriate sampling methods & statistical analysis. Following exploration of appropriate background material in class and through exploration of the scientific literature, students will learn how to formulate testable hypotheses regarding the underlying causes of the patterns they discern. A variety of different aspects of ecology and physiology will be investigated cooperatively by the students during the quarter, culminating in development of an individual final paper in the form of a research proposal based on data collected during the course. The course will provide a broad conceptual introduction to the underlying biological principles that influence adaptation to the planet's dynamic habitats, as well as inquiry-based experience in how to explore and understand complex systems in nature.
+ 
+Offered Spring 2019.  
+Co-taught with Dr. Mark Denny. 
+
+\  
+
+### Ecology and Conservation of Kelp Forest Communities (Biohopk-1850h)
+
+Five week course. Daily lectures, labs, and scuba dives focused on scientific diving and quantitative ecological methods in kelp forests. Topics include identification and natural history of resident organisms, ecological processes, and subtidal field techniques. Class projects contribute to long-term monitoring at Hopkins Marine Station. It is recommended (but not required) that students complete the Stanford Scientific Diver Training session, typically offered prior to the start of the course. Prerequisites: consent of instructor; rescue scuba certification and scuba equipment.
+
+Offered Summer 2019. 
+
+*The likely dates for this course will be June 24-July 26. I also recommend taking the Scientific Diving course immediately prior to the Kelp Forest class.  This course will run from June 17-21 with the possibility of a couple of additional days of pool and ocean training during the spring quarter.  The application links for these are not yet live - but the Kelp Forest Ecology app will have a deadline of March 15. Stay tuned for more details*
+
+\  
+
+## Contact
+
+E-mail:   
+elahi at stanford dot edu  
+
+Snail-mail:    
+120 Ocean View Blvd  
+Hopkins Marine Station     
+Pacific Grove, CA 93940
 
