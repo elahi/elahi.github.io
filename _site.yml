@@ -1,5 +1,12 @@
 name: Robin Elahi
+
 output_dir: "."
+
+output: 
+  html_document: 
+    includes:
+       in_header: ga_script.html
+
 navbar:
   title: "Home"
   left:
