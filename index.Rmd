@@ -45,8 +45,9 @@ Offered Winter 2019.
 ### Experimental Design and Probability (Biohopk-174h)
 
 Variability is an integral part of biology. Introduction to probability and its use in designing experiments to address biological problems. Focus is on experimental design and the use of linear models in testing hypotheses (e.g., analysis of variance, regression). Students will use R to explore and analyze locally relevant biological datasets. No programming or statistical background is assumed. 
-
-Offered Spring 2019. 
+ 
+Offered Spring 2019.  
+[https://elahi.github.io/xdp/](https://elahi.github.io/xdp/)
 
 \  
 

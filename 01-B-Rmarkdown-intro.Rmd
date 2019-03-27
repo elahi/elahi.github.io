@@ -22,7 +22,7 @@ knitr::opts_chunk$set(fig.path = "images/01-B/")
 
 # Set the web address where R will look for files from this repository
 # Do not change this address
-repo_url <- "https://raw.githubusercontent.com/fukamilab/BIO202/master/"
+repo_url <- "https://raw.githubusercontent.com/elahi/github.io/master/"
 
 # A function that allows writing r inline verbatim
 rinline <- function(code) {
@@ -43,24 +43,30 @@ rinline <- function(code) {
 
 ### How we will use R markdown
 
-Our course website is a set of R markdown files that have been rendered to html files and are hosted on [GitHub Pages](https://pages.github.com/). You can find all of the pages that comprise our course website in [this GitHub repository](http://github.com/FukamiLab/BIO202). The main landing page is found in the file `index.html` which has been generated from the file `index.Rmd`. Each day of the class has a corresponding lesson webpage R markdown file named XX-Y-topic.Rmd, where XX is the week and Y is a letter corresponding to the day (A: Mon, B: Wed, C: Fri). Your job will be to edit the lesson webpage for the day that you sign up to lead class. We have provided an outline, but you will need to supply the example code and text describing what it does. 
+Our course website is a set of R markdown files that have been rendered to html files and are hosted on [GitHub Pages](https://pages.github.com/). You can find all of the pages that comprise this website in [this GitHub repository](https://github.com/elahi/elahi.github.io), and a similar one for our course website specifically (https://github.com/elahi/xxx, where xxx is specific to our course). The main landing page is found in the file `index.html` which has been generated from the file `index.Rmd`. 
 
-We are requiring you to interact with the course website in this way because being able to document reproducible analyses is a valuable skill that is becoming nearly required for today's ecologists. As analyses become more complex and specialized, code review, in addition to open access to data, is likely to become a regular aspect of formal and informal scientific review. Documenting your analyses in R markdown with RStudio is a (relatively) painless way to ensure that you (and your reviewers) understand how you obtained and analyzed your data even after months of putting a project "on the back burner". Therefore, we hope that you will find this additional class requirement useful even as it introduces a bit more cognitive burden.
+You will learn a bit of Rmarkdown, so that you can create a fully reproducible document as part of (some of) your lab assignments. Basically, this means integrating data analysis within a readable text document, like so:
 
-You have two options for editing the content of the course webpage:
+```{r}
+set.seed(121)
+x <- seq(1, 100, by = 2)
+m <- 0.5
+b <- 1.2
+z <- m * x + b
+y <- z + rnorm(50, mean = 0, sd = 10)
+plot(y ~ x)
+```
 
-1. Use git on your computer to interface with the files on GitHub.
-2. Download the .Rmd files from GitHub, edit them on your computer and email them to Jes.
 
-Today we will learn option 2 and there will be an optional session on Wednesday of Week 2 for anyone who wishes to learn how to use git for option 1. These two options are summarized on the [Editing the Course Website](file:///C:/Users/jrcoyle/Documents/Stanford/BIO202/GitHub/00-computer-setup.html#editing_the_course_website) section of the Computer Setup page on the course website.
+I am requiring you to interact with the course material in this way because being able to document reproducible analyses is a valuable skill that is becoming nearly required for today's scientists. As analyses become more complex and specialized, code review, in addition to open access to data, is likely to become a regular aspect of formal and informal scientific review. Documenting your analyses in R markdown with RStudio is a (relatively) painless way to ensure that you (and your reviewers) understand how you obtained and analyzed your data even after months of putting a project "on the back burner". Therefore, we hope that you will find this additional class requirement useful even as it introduces a bit more cognitive burden.
 
 #### Downloading files from GitHub
 
-Go to the [course website GitHub repository](https://github.com/FukamiLab/BIO202). Notice that you can choose to download all of the files as a zip file by clicking the green "Clone or download" button in the upper right. You will only need to edit one (or a few) pages, so let's just download one file rather than the whole website. Click on the R markdown file corresponding to the example lesson template: `00-example-lesson.Rmd`, then click the 'Raw' button that appears at the top right corner of the document viewer on the page that loads. This will take you to a page that displays the text in the file. Download the page as a .Rmd file (remove the .txt extension that your browser will attempt to append) and save it somewhere useful on your computer (e.g. the folder you have made for this class, not Downloads or Desktop). Find the file on your computer and open it. It should open in RStudio.
+Go to the [course website GitHub repository](https://github.com/elahi/elahi.github.io). Notice that you can choose to download all of the files as a zip file by clicking the green "Clone or download" button in the upper right. You will only need to edit one (or a few) pages, so let's just download one file rather than the whole website. Click on the R markdown file corresponding to this html webpage: `https://github.com/elahi/elahi.github.io/blob/master/01-B-Rmarkdown-intro.Rmd`, then click the 'Raw' button that appears at the top right corner of the document viewer on the page that loads. This will take you to a page that displays the text in the file. Download the page as a .Rmd file (remove the .txt extension that your browser will attempt to append) and save it somewhere useful on your computer (e.g. the folder you have made for this class, not Downloads or Desktop). Find the file on your computer and open it. It should open in RStudio.
 
 > **Exercise:**
 >
-> Compare the contents of the .Rmd file to what you see on the course website: http://fukamilab.github.io/BIO202/00-example-lesson.html .
+> Compare the contents of the .Rmd file to what you see on the website: https://elahi.github.io/01-B-Rmarkdown-intro.html
 >
 > + What is the same?
 > + What is different?
@@ -76,9 +82,9 @@ R markdown files have three main pieces:
 
 > **Exercise:**
 > 
-> Find each of these three pieces in the example lesson document.
+> Find each of these three pieces in the .Rmd file for this webpage.
 
-You will not need to edit the header for any of the course webpages, other than to add you name to the list of authors. Check out the following resources if you are interested in generating your own markdown documents from scratch and want to learn more about how to change the format of the output document:
+Check out the following resources for generating your own markdown documents from scratch and want to learn more about how to change the format of the output document:
 
 + [RStudio's lessons on using R markdown](http://rmarkdown.rstudio.com/lesson-1.html)
 + [Reference guide](https://www.rstudio.com/wp-content/uploads/2015/03/rmarkdown-reference.pdf)
@@ -124,7 +130,7 @@ If you click the 'Run' button at the top of the document you can choose to run a
 
 > **Exercise:**
 >
-> Run a line of code in the example lesson Rmd file. What happens in the Console window? What happens in the Environment window?
+> Run a line of code in your Rmd file. What happens in the Console window? What happens in the Environment window?
 >
 > Now try running a line of text from this document. What happens?
 >
@@ -141,8 +147,8 @@ To render an Rmd document in Rstudio, click the 'Knit' button at the top of the 
 
 > **Exercise:**
 > 
-> 1. Render the example lesson Rmd file to an html file in RStudio by clicking the Knit button.
-> 2. Use your file browser to locate the html file that was generated. Open it with your browser- what do you see? How does it differ from what is displayed [on the course website](https://fukamilab.github.io/BIO202/00-example-lesson.html)?
+> 1. Render your practice Rmd file to an html file in RStudio by clicking the Knit button.
+> 2. Use your file browser to locate the html file that was generated. Open it with your browser- what do you see? How does it differ from what is displayed on this website?
 > 3. Now open the html file with a text editor (emacs, notepad). What do you see?
 
 #### Code chunk options
@@ -159,9 +165,9 @@ Look at the first code chunk in the example lesson Rmd document where the global
 
 #### Figures
 
-Any figure that you make in a code chunk will by default be saved as separate files in your working directory and then imported into the final document created by `pandoc`. In our class webpages, the first code chunk specifies: `knitr::opts_chunk$set(fig.path = "images/")`, which tells `knitr` that it should save any figures generated with code chunks to a folder named "images" within the working directory. The image files will be named according to the name of the code chunk from which they are generated. Hence, it is a good idea to separate analyses into separate code chunks and give them somewhat descriptive names. R markdown can also automatically number and caption your figures and tables. The [`captioner`](https://cran.r-project.org/web/packages/captioner/vignettes/using_captioner.html) package is particularly useful for this.
+Any figure that you make in a code chunk will by default be saved as separate files in your working directory and then imported into the final document created by `pandoc`. For these webpages, the first code chunk specifies: `knitr::opts_chunk$set(fig.path = "images/")`, which tells `knitr` that it should save any figures generated with code chunks to a folder named "images" within the working directory. The image files will be named according to the name of the code chunk from which they are generated. Hence, it is a good idea to separate analyses into separate code chunks and give them somewhat descriptive names. R markdown can also automatically number and caption your figures and tables. The [`captioner`](https://cran.r-project.org/web/packages/captioner/vignettes/using_captioner.html) package is particularly useful for this.
 
 > **Exercise:**
 >
 > 1. Add a new section to the example lesson Rmd document with markdown-formatted text and a new R code chunk. Render the document again.
-> 2. Open the html file with your web browser to see what your changes would look like online. How does what you see differ from what is shown at https://fukamilab.github.io/BIO202/00-example-lesson.html ?
+> 2. Open the html file with your web browser to see what your changes would look like online. How does what you see differ from what is shown on this website?

@@ -78,9 +78,7 @@ h6 {
 </style>
 
 
-</head>
 
-<body>
 
 <style type = "text/css">
 .main-container {
@@ -105,6 +103,9 @@ img {
 button.code-folding-btn:focus {
   outline: none;
 }
+summary {
+  display: list-item;
+}
 </style>
 
 
@@ -119,7 +120,6 @@ body {
   padding-top: 56px;
   margin-top: -56px;
 }
-
 .section h2 {
   padding-top: 56px;
   margin-top: -56px;
@@ -139,6 +139,43 @@ body {
 .section h6 {
   padding-top: 56px;
   margin-top: -56px;
+}
+.dropdown-submenu {
+  position: relative;
+}
+.dropdown-submenu>.dropdown-menu {
+  top: 0;
+  left: 100%;
+  margin-top: -6px;
+  margin-left: -1px;
+  border-radius: 0 6px 6px 6px;
+}
+.dropdown-submenu:hover>.dropdown-menu {
+  display: block;
+}
+.dropdown-submenu>a:after {
+  display: block;
+  content: " ";
+  float: right;
+  width: 0;
+  height: 0;
+  border-color: transparent;
+  border-style: solid;
+  border-width: 5px 0 5px 5px;
+  border-left-color: #cccccc;
+  margin-top: 5px;
+  margin-right: -10px;
+}
+.dropdown-submenu:hover>a:after {
+  border-left-color: #ffffff;
+}
+.dropdown-submenu.pull-left {
+  float: none;
+}
+.dropdown-submenu.pull-left>.dropdown-menu {
+  left: -100%;
+  margin-left: 10px;
+  border-radius: 6px 0 6px 6px;
 }
 </style>
 
@@ -160,19 +197,85 @@ $(document).ready(function () {
 });
 </script>
 
-
-<div class="container-fluid main-container">
-
 <!-- tabsets -->
+
+<style type="text/css">
+.tabset-dropdown > .nav-tabs {
+  display: inline-table;
+  max-height: 500px;
+  min-height: 44px;
+  overflow-y: auto;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.tabset-dropdown > .nav-tabs > li.active:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
+  content: "&#xe258;";
+  border: none;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs > li.active {
+  display: block;
+}
+
+.tabset-dropdown > .nav-tabs > li > a,
+.tabset-dropdown > .nav-tabs > li > a:focus,
+.tabset-dropdown > .nav-tabs > li > a:hover {
+  border: none;
+  display: inline-block;
+  border-radius: 4px;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li {
+  display: block;
+  float: none;
+}
+
+.tabset-dropdown > .nav-tabs > li {
+  display: none;
+}
+</style>
+
 <script>
 $(document).ready(function () {
   window.buildTabsets("TOC");
+});
+
+$(document).ready(function () {
+  $('.tabset-dropdown > .nav-tabs > li').click(function () {
+    $(this).parent().toggleClass('nav-tabs-open')
+  });
 });
 </script>
 
 <!-- code folding -->
 
 
+
+
+</head>
+
+<body>
+
+
+<div class="container-fluid main-container">
 
 
 
@@ -259,7 +362,7 @@ $(document).ready(function () {
 </div>
 <div id="setting-up-your-research-project" class="section level3">
 <h3>Setting up your research project</h3>
-<p>Open RStudio and click File &gt; New Project. Make this project in a new directory and select “Empty Project”. You will be prompted to type a name for the project and choose a directory on your computer where you want to save it. The new project can be saved anywhere on your computer that makes sense and you should choose an informative project name <strong>with no spaces</strong>. If you think that you might want to track changes to this project using version control or save the code to GitHub, be sure to check the “Create a git repository” box. We will have a <a href="02-B-git-intro.html">lesson on Git</a> on Wednesday, October 4th.</p>
+<p>Open RStudio and click File &gt; New Project. Make this project in a new directory and select “Empty Project”. You will be prompted to type a name for the project and choose a directory on your computer where you want to save it. The new project can be saved anywhere on your computer that makes sense and you should choose an informative project name <strong>with no spaces</strong>. If you think that you might want to track changes to this project using version control or save the code to GitHub, be sure to check the “Create a git repository” box.</p>
 <p>You will now have three windows displayed in RStudio:</p>
 <ul>
 <li><strong>Console</strong>: This is where the R code that you run will show up and display results.</li>
@@ -297,21 +400,6 @@ $(document).ready(function () {
 <p><strong>Exercise</strong></p>
 <p>Add a header to your R script describing what will eventually be contained in it.</p>
 </blockquote>
-</div>
-<div id="editing-r-code" class="section level4">
-<h4>Editing R Code</h4>
-<p>In this class we will often be working with and modifying existing R code that others have written. Many scientists learn R by borrowing code and modifying it to suit their purposes. Therefore it is useful to start right away learning how to search for answers and troubleshoot.</p>
-<p>Download <a href="https://github.com/FukamiLab/BIO202/blob/master/code/01-A-r-intro-exercise-code.R">this R script</a> and save it in your code folder in the research project you created today. You will need to click the ‘Raw’ button and then download the text file that appears. Be sure to remove the .txt extension that may have been added when you saved the file to your computer so that the file ends in .R. Then, open the downloaded script in your current RStudio session.</p>
-<p>This R script makes a new folder called ‘data’ and downloads a csv file from our course website into this folder. The csv file contains data on trees sampled by students in the BIO46 winter quarter class in 2017. It then reads the data into R and saves it as an object named <code>raw_data</code>. The <code>raw_data</code> object is a dataframe, which is basically a table where rows are observations and columns are attributes. It is a very useful data structure for performing statistical analyses. The code then goes on to calculate the mean value of latitude across all observations in the dataset and count the number of each species of tree sampled. Run the code so that you can see how it works.</p>
-<blockquote>
-<p><strong>Exercise:</strong></p>
-<ol style="list-style-type: decimal">
-<li>Save the R script you downloaded as a new R script named “analysis_2017-09-25.R” into the code folder in this project.</li>
-<li>Copy a csv file from your computer containing data that you are interested in working with. If you don’t have a csv file yet, go to the <a href="http://data.neonscience.org/browse-data">Neon Data Portal</a> and download precipitation data from the Toolik Lake Core site in Alaska.</li>
-<li>Modify your R script so that it reads the data file into R and calculates the maximum value in one of the columns.</li>
-</ol>
-</blockquote>
-<p>If you get stuck, use the Help tab in RStudio as well as internet searches to figure out how to accomplish this task. Ask your classmates for help too!</p>
 <p><strong>Don’t forget to press save periodically!</strong> RStudio does not automatically save changes to documents.</p>
 </div>
 </div>

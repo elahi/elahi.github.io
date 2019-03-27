@@ -78,9 +78,7 @@ h6 {
 </style>
 
 
-</head>
 
-<body>
 
 <style type = "text/css">
 .main-container {
@@ -105,6 +103,9 @@ img {
 button.code-folding-btn:focus {
   outline: none;
 }
+summary {
+  display: list-item;
+}
 </style>
 
 
@@ -119,7 +120,6 @@ body {
   padding-top: 56px;
   margin-top: -56px;
 }
-
 .section h2 {
   padding-top: 56px;
   margin-top: -56px;
@@ -139,6 +139,43 @@ body {
 .section h6 {
   padding-top: 56px;
   margin-top: -56px;
+}
+.dropdown-submenu {
+  position: relative;
+}
+.dropdown-submenu>.dropdown-menu {
+  top: 0;
+  left: 100%;
+  margin-top: -6px;
+  margin-left: -1px;
+  border-radius: 0 6px 6px 6px;
+}
+.dropdown-submenu:hover>.dropdown-menu {
+  display: block;
+}
+.dropdown-submenu>a:after {
+  display: block;
+  content: " ";
+  float: right;
+  width: 0;
+  height: 0;
+  border-color: transparent;
+  border-style: solid;
+  border-width: 5px 0 5px 5px;
+  border-left-color: #cccccc;
+  margin-top: 5px;
+  margin-right: -10px;
+}
+.dropdown-submenu:hover>a:after {
+  border-left-color: #ffffff;
+}
+.dropdown-submenu.pull-left {
+  float: none;
+}
+.dropdown-submenu.pull-left>.dropdown-menu {
+  left: -100%;
+  margin-left: 10px;
+  border-radius: 6px 0 6px 6px;
 }
 </style>
 
@@ -160,19 +197,85 @@ $(document).ready(function () {
 });
 </script>
 
-
-<div class="container-fluid main-container">
-
 <!-- tabsets -->
+
+<style type="text/css">
+.tabset-dropdown > .nav-tabs {
+  display: inline-table;
+  max-height: 500px;
+  min-height: 44px;
+  overflow-y: auto;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.tabset-dropdown > .nav-tabs > li.active:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
+  content: "&#xe258;";
+  border: none;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs > li.active {
+  display: block;
+}
+
+.tabset-dropdown > .nav-tabs > li > a,
+.tabset-dropdown > .nav-tabs > li > a:focus,
+.tabset-dropdown > .nav-tabs > li > a:hover {
+  border: none;
+  display: inline-block;
+  border-radius: 4px;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li {
+  display: block;
+  float: none;
+}
+
+.tabset-dropdown > .nav-tabs > li {
+  display: none;
+}
+</style>
+
 <script>
 $(document).ready(function () {
   window.buildTabsets("TOC");
+});
+
+$(document).ready(function () {
+  $('.tabset-dropdown > .nav-tabs > li').click(function () {
+    $(this).parent().toggleClass('nav-tabs-open')
+  });
 });
 </script>
 
 <!-- code folding -->
 
 
+
+
+</head>
+
+<body>
+
+
+<div class="container-fluid main-container">
 
 
 
@@ -251,20 +354,23 @@ $(document).ready(function () {
 </div>
 <div id="how-we-will-use-r-markdown" class="section level3">
 <h3>How we will use R markdown</h3>
-<p>Our course website is a set of R markdown files that have been rendered to html files and are hosted on <a href="https://pages.github.com/">GitHub Pages</a>. You can find all of the pages that comprise our course website in <a href="http://github.com/FukamiLab/BIO202">this GitHub repository</a>. The main landing page is found in the file <code>index.html</code> which has been generated from the file <code>index.Rmd</code>. Each day of the class has a corresponding lesson webpage R markdown file named XX-Y-topic.Rmd, where XX is the week and Y is a letter corresponding to the day (A: Mon, B: Wed, C: Fri). Your job will be to edit the lesson webpage for the day that you sign up to lead class. We have provided an outline, but you will need to supply the example code and text describing what it does.</p>
-<p>We are requiring you to interact with the course website in this way because being able to document reproducible analyses is a valuable skill that is becoming nearly required for today’s ecologists. As analyses become more complex and specialized, code review, in addition to open access to data, is likely to become a regular aspect of formal and informal scientific review. Documenting your analyses in R markdown with RStudio is a (relatively) painless way to ensure that you (and your reviewers) understand how you obtained and analyzed your data even after months of putting a project “on the back burner”. Therefore, we hope that you will find this additional class requirement useful even as it introduces a bit more cognitive burden.</p>
-<p>You have two options for editing the content of the course webpage:</p>
-<ol style="list-style-type: decimal">
-<li>Use git on your computer to interface with the files on GitHub.</li>
-<li>Download the .Rmd files from GitHub, edit them on your computer and email them to Jes.</li>
-</ol>
-<p>Today we will learn option 2 and there will be an optional session on Wednesday of Week 2 for anyone who wishes to learn how to use git for option 1. These two options are summarized on the <a href="file:///C:/Users/jrcoyle/Documents/Stanford/BIO202/GitHub/00-computer-setup.html#editing_the_course_website">Editing the Course Website</a> section of the Computer Setup page on the course website.</p>
+<p>Our course website is a set of R markdown files that have been rendered to html files and are hosted on <a href="https://pages.github.com/">GitHub Pages</a>. You can find all of the pages that comprise this website in <a href="https://github.com/elahi/elahi.github.io">this GitHub repository</a>, and a similar one for our course website specifically (<a href="https://github.com/elahi/xxx" class="uri">https://github.com/elahi/xxx</a>, where xxx is specific to our course). The main landing page is found in the file <code>index.html</code> which has been generated from the file <code>index.Rmd</code>.</p>
+<p>You will learn a bit of Rmarkdown, so that you can create a fully reproducible document as part of (some of) your lab assignments. Basically, this means integrating data analysis within a readable text document, like so:</p>
+<pre class="r"><code>set.seed(121)
+x &lt;- seq(1, 100, by = 2)
+m &lt;- 0.5
+b &lt;- 1.2
+z &lt;- m * x + b
+y &lt;- z + rnorm(50, mean = 0, sd = 10)
+plot(y ~ x)</code></pre>
+<p><img src="images/01-B/unnamed-chunk-2-1.png" width="672" /></p>
+<p>I am requiring you to interact with the course material in this way because being able to document reproducible analyses is a valuable skill that is becoming nearly required for today’s scientists. As analyses become more complex and specialized, code review, in addition to open access to data, is likely to become a regular aspect of formal and informal scientific review. Documenting your analyses in R markdown with RStudio is a (relatively) painless way to ensure that you (and your reviewers) understand how you obtained and analyzed your data even after months of putting a project “on the back burner”. Therefore, we hope that you will find this additional class requirement useful even as it introduces a bit more cognitive burden.</p>
 <div id="downloading-files-from-github" class="section level4">
 <h4>Downloading files from GitHub</h4>
-<p>Go to the <a href="https://github.com/FukamiLab/BIO202">course website GitHub repository</a>. Notice that you can choose to download all of the files as a zip file by clicking the green “Clone or download” button in the upper right. You will only need to edit one (or a few) pages, so let’s just download one file rather than the whole website. Click on the R markdown file corresponding to the example lesson template: <code>00-example-lesson.Rmd</code>, then click the ‘Raw’ button that appears at the top right corner of the document viewer on the page that loads. This will take you to a page that displays the text in the file. Download the page as a .Rmd file (remove the .txt extension that your browser will attempt to append) and save it somewhere useful on your computer (e.g. the folder you have made for this class, not Downloads or Desktop). Find the file on your computer and open it. It should open in RStudio.</p>
+<p>Go to the <a href="https://github.com/elahi/elahi.github.io">course website GitHub repository</a>. Notice that you can choose to download all of the files as a zip file by clicking the green “Clone or download” button in the upper right. You will only need to edit one (or a few) pages, so let’s just download one file rather than the whole website. Click on the R markdown file corresponding to this html webpage: <code>https://github.com/elahi/elahi.github.io/blob/master/01-B-Rmarkdown-intro.Rmd</code>, then click the ‘Raw’ button that appears at the top right corner of the document viewer on the page that loads. This will take you to a page that displays the text in the file. Download the page as a .Rmd file (remove the .txt extension that your browser will attempt to append) and save it somewhere useful on your computer (e.g. the folder you have made for this class, not Downloads or Desktop). Find the file on your computer and open it. It should open in RStudio.</p>
 <blockquote>
 <p><strong>Exercise:</strong></p>
-<p>Compare the contents of the .Rmd file to what you see on the course website: <a href="http://fukamilab.github.io/BIO202/00-example-lesson.html" class="uri">http://fukamilab.github.io/BIO202/00-example-lesson.html</a> .</p>
+<p>Compare the contents of the .Rmd file to what you see on the website: <a href="https://elahi.github.io/01-B-Rmarkdown-intro.html" class="uri">https://elahi.github.io/01-B-Rmarkdown-intro.html</a></p>
 <ul>
 <li>What is the same?</li>
 <li>What is different?</li>
@@ -282,9 +388,9 @@ $(document).ready(function () {
 </ol>
 <blockquote>
 <p><strong>Exercise:</strong></p>
-<p>Find each of these three pieces in the example lesson document.</p>
+<p>Find each of these three pieces in the .Rmd file for this webpage.</p>
 </blockquote>
-<p>You will not need to edit the header for any of the course webpages, other than to add you name to the list of authors. Check out the following resources if you are interested in generating your own markdown documents from scratch and want to learn more about how to change the format of the output document:</p>
+<p>Check out the following resources for generating your own markdown documents from scratch and want to learn more about how to change the format of the output document:</p>
 <ul>
 <li><a href="http://rmarkdown.rstudio.com/lesson-1.html">RStudio’s lessons on using R markdown</a></li>
 <li><a href="https://www.rstudio.com/wp-content/uploads/2015/03/rmarkdown-reference.pdf">Reference guide</a></li>
@@ -322,7 +428,7 @@ my_kg &lt;- my_lbs * 0.45359237</code></pre>
 <p>If you click the ‘Run’ button at the top of the document you can choose to run all code chunks in the document (or just those above or below your cursor).</p>
 <blockquote>
 <p><strong>Exercise:</strong></p>
-<p>Run a line of code in the example lesson Rmd file. What happens in the Console window? What happens in the Environment window?</p>
+<p>Run a line of code in your Rmd file. What happens in the Console window? What happens in the Environment window?</p>
 <p>Now try running a line of text from this document. What happens?</p>
 <p>What happens when you use the ‘Run’ button to run all code chunks in the document?</p>
 </blockquote>
@@ -335,8 +441,8 @@ my_kg &lt;- my_lbs * 0.45359237</code></pre>
 <blockquote>
 <p><strong>Exercise:</strong></p>
 <ol style="list-style-type: decimal">
-<li>Render the example lesson Rmd file to an html file in RStudio by clicking the Knit button.</li>
-<li>Use your file browser to locate the html file that was generated. Open it with your browser- what do you see? How does it differ from what is displayed <a href="https://fukamilab.github.io/BIO202/00-example-lesson.html">on the course website</a>?</li>
+<li>Render your practice Rmd file to an html file in RStudio by clicking the Knit button.</li>
+<li>Use your file browser to locate the html file that was generated. Open it with your browser- what do you see? How does it differ from what is displayed on this website?</li>
 <li>Now open the html file with a text editor (emacs, notepad). What do you see?</li>
 </ol>
 </blockquote>
@@ -352,12 +458,12 @@ my_kg &lt;- my_lbs * 0.45359237</code></pre>
 </div>
 <div id="figures" class="section level4">
 <h4>Figures</h4>
-<p>Any figure that you make in a code chunk will by default be saved as separate files in your working directory and then imported into the final document created by <code>pandoc</code>. In our class webpages, the first code chunk specifies: <code>knitr::opts_chunk$set(fig.path = &quot;images/&quot;)</code>, which tells <code>knitr</code> that it should save any figures generated with code chunks to a folder named “images” within the working directory. The image files will be named according to the name of the code chunk from which they are generated. Hence, it is a good idea to separate analyses into separate code chunks and give them somewhat descriptive names. R markdown can also automatically number and caption your figures and tables. The <a href="https://cran.r-project.org/web/packages/captioner/vignettes/using_captioner.html"><code>captioner</code></a> package is particularly useful for this.</p>
+<p>Any figure that you make in a code chunk will by default be saved as separate files in your working directory and then imported into the final document created by <code>pandoc</code>. For these webpages, the first code chunk specifies: <code>knitr::opts_chunk$set(fig.path = &quot;images/&quot;)</code>, which tells <code>knitr</code> that it should save any figures generated with code chunks to a folder named “images” within the working directory. The image files will be named according to the name of the code chunk from which they are generated. Hence, it is a good idea to separate analyses into separate code chunks and give them somewhat descriptive names. R markdown can also automatically number and caption your figures and tables. The <a href="https://cran.r-project.org/web/packages/captioner/vignettes/using_captioner.html"><code>captioner</code></a> package is particularly useful for this.</p>
 <blockquote>
 <p><strong>Exercise:</strong></p>
 <ol style="list-style-type: decimal">
 <li>Add a new section to the example lesson Rmd document with markdown-formatted text and a new R code chunk. Render the document again.</li>
-<li>Open the html file with your web browser to see what your changes would look like online. How does what you see differ from what is shown at <a href="https://fukamilab.github.io/BIO202/00-example-lesson.html" class="uri">https://fukamilab.github.io/BIO202/00-example-lesson.html</a> ?</li>
+<li>Open the html file with your web browser to see what your changes would look like online. How does what you see differ from what is shown on this website?</li>
 </ol>
 </blockquote>
 </div>
