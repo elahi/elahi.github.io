@@ -78,7 +78,9 @@ h6 {
 </style>
 
 
+</head>
 
+<body>
 
 <style type = "text/css">
 .main-container {
@@ -103,9 +105,6 @@ img {
 button.code-folding-btn:focus {
   outline: none;
 }
-summary {
-  display: list-item;
-}
 </style>
 
 
@@ -120,6 +119,7 @@ body {
   padding-top: 56px;
   margin-top: -56px;
 }
+
 .section h2 {
   padding-top: 56px;
   margin-top: -56px;
@@ -139,43 +139,6 @@ body {
 .section h6 {
   padding-top: 56px;
   margin-top: -56px;
-}
-.dropdown-submenu {
-  position: relative;
-}
-.dropdown-submenu>.dropdown-menu {
-  top: 0;
-  left: 100%;
-  margin-top: -6px;
-  margin-left: -1px;
-  border-radius: 0 6px 6px 6px;
-}
-.dropdown-submenu:hover>.dropdown-menu {
-  display: block;
-}
-.dropdown-submenu>a:after {
-  display: block;
-  content: " ";
-  float: right;
-  width: 0;
-  height: 0;
-  border-color: transparent;
-  border-style: solid;
-  border-width: 5px 0 5px 5px;
-  border-left-color: #cccccc;
-  margin-top: 5px;
-  margin-right: -10px;
-}
-.dropdown-submenu:hover>a:after {
-  border-left-color: #ffffff;
-}
-.dropdown-submenu.pull-left {
-  float: none;
-}
-.dropdown-submenu.pull-left>.dropdown-menu {
-  left: -100%;
-  margin-left: 10px;
-  border-radius: 6px 0 6px 6px;
 }
 </style>
 
@@ -197,85 +160,19 @@ $(document).ready(function () {
 });
 </script>
 
+
+<div class="container-fluid main-container">
+
 <!-- tabsets -->
-
-<style type="text/css">
-.tabset-dropdown > .nav-tabs {
-  display: inline-table;
-  max-height: 500px;
-  min-height: 44px;
-  overflow-y: auto;
-  background: white;
-  border: 1px solid #ddd;
-  border-radius: 4px;
-}
-
-.tabset-dropdown > .nav-tabs > li.active:before {
-  content: "";
-  font-family: 'Glyphicons Halflings';
-  display: inline-block;
-  padding: 10px;
-  border-right: 1px solid #ddd;
-}
-
-.tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
-  content: "&#xe258;";
-  border: none;
-}
-
-.tabset-dropdown > .nav-tabs.nav-tabs-open:before {
-  content: "";
-  font-family: 'Glyphicons Halflings';
-  display: inline-block;
-  padding: 10px;
-  border-right: 1px solid #ddd;
-}
-
-.tabset-dropdown > .nav-tabs > li.active {
-  display: block;
-}
-
-.tabset-dropdown > .nav-tabs > li > a,
-.tabset-dropdown > .nav-tabs > li > a:focus,
-.tabset-dropdown > .nav-tabs > li > a:hover {
-  border: none;
-  display: inline-block;
-  border-radius: 4px;
-}
-
-.tabset-dropdown > .nav-tabs.nav-tabs-open > li {
-  display: block;
-  float: none;
-}
-
-.tabset-dropdown > .nav-tabs > li {
-  display: none;
-}
-</style>
-
 <script>
 $(document).ready(function () {
   window.buildTabsets("TOC");
-});
-
-$(document).ready(function () {
-  $('.tabset-dropdown > .nav-tabs > li').click(function () {
-    $(this).parent().toggleClass('nav-tabs-open')
-  });
 });
 </script>
 
 <!-- code folding -->
 
 
-
-
-</head>
-
-<body>
-
-
-<div class="container-fluid main-container">
 
 
 
@@ -335,7 +232,7 @@ $(document).ready(function () {
 
 
 <h1 class="title toc-ignore">Robin Elahi, PhD</h1>
-<h3 class="subtitle">Hopkins Marine Station, Stanford University</h3>
+<h3 class="subtitle"><em>Hopkins Marine Station, Stanford University</em></h3>
 
 </div>
 
@@ -345,24 +242,50 @@ $(document).ready(function () {
 <div id="courses" class="section level2">
 <h2>Courses</h2>
 <p>A list of the courses offered at Hopkins Marine Station can be found here:</p>
-<p><a href="https://exploredegrees.stanford.edu/coursedescriptions/biohopk/" class="uri">https://exploredegrees.stanford.edu/coursedescriptions/biohopk/</a></p>
+<p><a href="https://exploredegrees.stanford.edu/coursedescriptions/biohopk/">https://exploredegrees.stanford.edu/coursedescriptions/biohopk/</a></p>
 <p>Applications for the undergraduate program can be found here:</p>
-<p><a href="https://hopkinsmarinestation.stanford.edu/education/undergraduate-studies/apply-undergraduate-program" class="uri">https://hopkinsmarinestation.stanford.edu/education/undergraduate-studies/apply-undergraduate-program</a></p>
+<p><a href="https://hopkinsmarinestation.stanford.edu/education/undergraduate-studies/apply-undergraduate-program">https://hopkinsmarinestation.stanford.edu/education/undergraduate-studies/apply-undergraduate-program</a></p>
 <p> </p>
-<p>A bit more info on my upcoming courses can be found below:</p>
+<p>A bit more info on upcoming (and past) courses can be found below:</p>
 <p> </p>
-<div id="statistical-modeling-biohopk-140h" class="section level3">
-<h3>Statistical Modeling (Biohopk-140h)</h3>
-<p>Introduction to applied statistical modeling in a Bayesian framework. Topics will include probability, regression, model comparison, and hierarchical modeling. We will take a hands-on, computational approach (R, Stan) to gain intuition so that students can later design their own inferential models. Prerequisites for this course include introductory statistics and some calculus or linear algebra, as well as previous exposure to scientific computing. Open to graduate students; undergraduate students may enroll with consent of instructor.</p>
-<p>Offered Winter 2019.<br />
-<a href="https://elahi.github.io/biohopk-140h/" class="uri">https://elahi.github.io/biohopk-140h/</a></p>
+<div id="historical-ecology-of-marine-invertebrates-biohopk-142h" class="section level3">
+<h3>Historical Ecology of Marine Invertebrates (Biohopk-142h)</h3>
+<p>This course is an exploration of the local invertebrate fauna at Hopkins Marine Station, through the lens of a long-term monitoring study initiated by Hewatt in 1931. During week 1, lectures will provide an overview of the major groups represented on rocky intertidal shores. In the laboratory, students will focus on species identification. These skills will be put to use in week 2, when students will collaborate as a team to quantify the abundance of ~100 species in the field and thus contribute to long-term monitoring in the Hopkins Marine Life Observatory. During week 3, students will investigate a relevant organismal or ecological problem.</p>
+<p><a href="images/biohopk_142_flier.pdf">Course flier</a></p>
+<p>Offered Winter 2020.<br />
+<!-- [https://elahi.github.io/xdp/](https://elahi.github.io/xdp/) --></p>
+<p> </p>
+</div>
+<div id="marine-science-and-conservation-in-a-changing-world-biohopk-175h" class="section level3">
+<h3>Marine Science and Conservation in a Changing World (Biohopk-175h)</h3>
+<p>This hands-on, experiential course provides a broad foundation in marine science, and explores emerging opportunities for innovation in the study of life in the sea. Students are resident at Stanford’s Hopkins Marine Station in Pacific Grove (90 miles south of main campus) where the diverse organisms and environments of Monterey Bay provide the focus for the course. Class meets daily with lectures, discussions, labs, and field work throughout the day. Three linked concentrations, each 3 weeks long, are taught sequentially to address (1) the extraordinary diversity of marine organisms and habitats, (2) the physiology and behavior of marine animals, and (3) the principles of marine ecology. Connecting these concentrations is a weekly seminar-based discussion of topics in marine conservation. This design permits deep concentration on each subject, and places emphasis on discussion, group dialog, individual exploration, and experiential learning. In the final week of the quarter, students complete an individual capstone project of their choosing. This course fulfills the same laboratory requirement as BIO 47.</p>
+<p>Offered Spring 2020.</p>
+<p>I will co-teach the following concentration with Dr. Mark Denny:</p>
+<p><em>Biodiversity and biomechanics of Monterey Bay</em><br />
+We will explore the biodiversity of coastal ecosystems in Monterey Bay, with particular emphasis on the organisms found on local intertidal shores and in nearshore waters. Frequent field trips to a variety of habitats allow students to study organisms in nature, including rocky shores, kelp forests, seagrass beds, sandy beaches, dock communities, and mudflats. We will couch biological observations in a biophysical context: how do individuals make a living in a heterogeneous and dynamic environment? Lectures are combined with laboratory studies focused on taxonomy, natural history, and the biomechanical adaptations of live organisms.</p>
 <p> </p>
 </div>
 <div id="experimental-design-and-probability-biohopk-174h" class="section level3">
 <h3>Experimental Design and Probability (Biohopk-174h)</h3>
 <p>Variability is an integral part of biology. Introduction to probability and its use in designing experiments to address biological problems. Focus is on experimental design and the use of linear models in testing hypotheses (e.g., analysis of variance, regression). Students will use R to explore and analyze locally relevant biological datasets. No programming or statistical background is assumed.</p>
-<p>Offered Spring 2019.<br />
-<a href="https://elahi.github.io/xdp/" class="uri">https://elahi.github.io/xdp/</a></p>
+<p>Offered Spring 2020.<br />
+<!-- [https://elahi.github.io/xdp/](https://elahi.github.io/xdp/) --></p>
+<p> </p>
+</div>
+<div id="ecology-and-conservation-of-kelp-forest-communities-biohopk-185h" class="section level3">
+<h3>Ecology and Conservation of Kelp Forest Communities (Biohopk-185h)</h3>
+<p>Five week course. Daily lectures, labs, and scuba dives focused on scientific diving and quantitative ecological methods in kelp forests. Students will be trained as scientific divers in accordance with the standards set by the American Academy of Underwater Scientists (AAUS). Topics include identification and natural history of resident organisms, ecological processes, and subtidal field techniques. Class projects will contribute to long-term monitoring at Hopkins Marine Station. <strong>Prerequisites: consent of instructor, advanced SCUBA certification, a minimum of 12 open water dives in temperate waters, and SCUBA equipment (HMS can provide tanks).</strong></p>
+<p>Offered Summer 2020.</p>
+<p><em>The dates for this course will be June 22-July 24, 2020. The application is due March 1, and will be posted here when it is live:</em></p>
+<!-- [https://hopkinsmarinestation.stanford.edu/webforms/hopkins-summer-undergrad-application-form](https://hopkinsmarinestation.stanford.edu/webforms/hopkins-summer-undergrad-application-form) -->
+<p> </p>
+</div>
+<div id="statistical-modeling-biohopk-140h" class="section level3">
+<h3>Statistical Modeling (Biohopk-140h)</h3>
+<p>Introduction to applied statistical modeling in a Bayesian framework. Topics will include probability, regression, model comparison, and hierarchical modeling. We will take a hands-on, computational approach (R, Stan) to gain intuition so that students can later design their own inferential models. Prerequisites for this course include introductory statistics and some calculus or linear algebra, as well as previous exposure to scientific computing. Open to graduate students; undergraduate students may enroll with consent of instructor.</p>
+<p>Offered Winter 2019:<br />
+<a href="https://elahi.github.io/biohopk-140h/">https://elahi.github.io/biohopk-140h/</a></p>
+<p>To be offered Winter 2021</p>
 <p> </p>
 </div>
 <div id="introduction-to-research-in-ecology-and-ecological-physiology-biohopk-47" class="section level3">
@@ -370,14 +293,6 @@ $(document).ready(function () {
 <p>This course is a field-based inquiry into rocky intertidal shores that introduces students to ecology and environmental physiology and the research methods used to study them. Students will learn how to detect patterns quantitatively in nature through appropriate sampling methods &amp; statistical analysis. Following exploration of appropriate background material in class and through exploration of the scientific literature, students will learn how to formulate testable hypotheses regarding the underlying causes of the patterns they discern. A variety of different aspects of ecology and physiology will be investigated cooperatively by the students during the quarter, culminating in development of an individual final paper in the form of a research proposal based on data collected during the course. The course will provide a broad conceptual introduction to the underlying biological principles that influence adaptation to the planet’s dynamic habitats, as well as inquiry-based experience in how to explore and understand complex systems in nature.</p>
 <p>Offered Spring 2019.<br />
 Co-taught with Dr. Mark Denny.</p>
-<p> </p>
-</div>
-<div id="ecology-and-conservation-of-kelp-forest-communities-biohopk-185h" class="section level3">
-<h3>Ecology and Conservation of Kelp Forest Communities (Biohopk-185h)</h3>
-<p>Five week course. Daily lectures, labs, and scuba dives focused on scientific diving and quantitative ecological methods in kelp forests. Students will be trained as scientific divers in accordance with the standards set by the American Academy of Underwater Scientists (AAUS). Topics include identification and natural history of resident organisms, ecological processes, and subtidal field techniques. Class projects will contribute to long-term monitoring at Hopkins Marine Station. <strong>Prerequisites: consent of instructor, advanced SCUBA certification, a minimum of 12 open water dives in temperate waters, and SCUBA equipment (HMS can provide tanks).</strong></p>
-<p>Offered Summer 2019.</p>
-<p><em>The dates for this course will be June 24-July 26. The application is due April 15, and is here:</em></p>
-<p><a href="https://hopkinsmarinestation.stanford.edu/webforms/hopkins-summer-undergrad-application-form" class="uri">https://hopkinsmarinestation.stanford.edu/webforms/hopkins-summer-undergrad-application-form</a></p>
 <p> </p>
 </div>
 </div>
