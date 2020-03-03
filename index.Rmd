@@ -11,13 +11,13 @@ output:
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
+
+# Set the web address where R will look for files from this repository
+# Do not change this address
+repo_url <- "https://raw.githubusercontent.com/elahi/github.io/master/"
 ```
 
-I am a lecturer at Stanford University's Hopkins Marine Station, where I teach courses in kelp forest ecology, statistics, and scientific computing. This site serves as the central teaching repository. I also maintain some relevant material for setting up R and related software - see the navigation bar above for details. 
-
-\  
-
-## Courses
+I am a lecturer at Stanford University's Hopkins Marine Station, where I teach courses in marine ecology, invertebrate zoology, and statistics. This site serves as the central teaching repository. I also maintain some relevant material for setting up R and related software - see the navigation bar above for details. 
 
 A list of the courses offered at Hopkins Marine Station can be found here:     
 
@@ -27,20 +27,24 @@ Applications for the undergraduate program can be found here:
 
 [https://hopkinsmarinestation.stanford.edu/education/undergraduate-studies/apply-undergraduate-program](https://hopkinsmarinestation.stanford.edu/education/undergraduate-studies/apply-undergraduate-program)
 
-\  
-
-A bit more info on upcoming (and past) courses can be found below:
+A bit more info on my current (and past) courses can be found below. 
 
 \  
 
-### Historical Ecology of Marine Invertebrates (Biohopk-142h)
 
-This course is an exploration of the local invertebrate fauna at Hopkins Marine Station, through the lens of a long-term monitoring study initiated by Hewatt in 1931. During week 1, lectures will provide an overview of the major groups represented on rocky intertidal shores. In the laboratory, students will focus on species identification. These skills will be put to use in week 2, when students will collaborate as a team to quantify the abundance of ~100 species in the field and thus contribute to long-term monitoring in the Hopkins Marine Life Observatory. During week 3, students will investigate a relevant organismal or ecological problem. 
+## Current courses (2020)
 
-[Course flier](images/biohopk_142_flier.pdf)
- 
-Offered Winter 2020.  
-<!-- [https://elahi.github.io/xdp/](https://elahi.github.io/xdp/) -->
+### Ecology and Conservation of Kelp Forest Communities (Biohopk-185h)
+
+Five week course. Daily lectures, labs, and scuba dives focused on scientific diving and quantitative ecological methods in kelp forests. Students will be trained as scientific divers in accordance with the standards set by the American Academy of Underwater Scientists (AAUS). Topics include identification and natural history of resident organisms, ecological processes, and subtidal field techniques. Class projects will contribute to long-term monitoring at Hopkins Marine Station. **Prerequisites: consent of instructor, advanced SCUBA certification, a minimum of 12 open water dives in temperate waters, and SCUBA equipment (HMS can provide tanks).**
+
+Offered Summer 2020. 
+
+[Course flier](images/KelpDiveFlyer2020_GradientOutline.png)
+
+*The dates for this course will be June 22-July 24, 2020. The priority application deadline is March 15, 2020, and the final deadline is April 15, 2020. *
+
+[https://hopkinsmarinestation.stanford.edu/webforms/hopkins-summer-undergrad-application-form](https://hopkinsmarinestation.stanford.edu/webforms/hopkins-summer-undergrad-application-form)
 
 \  
 
@@ -66,17 +70,18 @@ Offered Spring 2020.
 
 \  
 
-### Ecology and Conservation of Kelp Forest Communities (Biohopk-185h)
+### Historical Ecology of Marine Invertebrates (Biohopk-142h)
 
-Five week course. Daily lectures, labs, and scuba dives focused on scientific diving and quantitative ecological methods in kelp forests. Students will be trained as scientific divers in accordance with the standards set by the American Academy of Underwater Scientists (AAUS). Topics include identification and natural history of resident organisms, ecological processes, and subtidal field techniques. Class projects will contribute to long-term monitoring at Hopkins Marine Station. **Prerequisites: consent of instructor, advanced SCUBA certification, a minimum of 12 open water dives in temperate waters, and SCUBA equipment (HMS can provide tanks).**
+This course is an exploration of the local invertebrate fauna at Hopkins Marine Station, through the lens of a long-term monitoring study initiated by Hewatt in 1931. During week 1, lectures will provide an overview of the major groups represented on rocky intertidal shores. In the laboratory, students will focus on species identification. These skills will be put to use in week 2, when students will collaborate as a team to quantify the abundance of ~100 species in the field and thus contribute to long-term monitoring in the Hopkins Marine Life Observatory. During week 3, students will investigate a relevant organismal or ecological problem. 
 
-Offered Summer 2020. 
-
-*The dates for this course will be June 22-July 24, 2020. The application is due March 1 2020, and will be posted here when it is live:*
-
-<!-- [https://hopkinsmarinestation.stanford.edu/webforms/hopkins-summer-undergrad-application-form](https://hopkinsmarinestation.stanford.edu/webforms/hopkins-summer-undergrad-application-form) -->
+[Course flier](images/biohopk_142_flier.pdf)
+ 
+Offered Winter 2020.  
 
 \  
+
+
+## Past courses
 
 ### Statistical Modeling (Biohopk-140h)
 

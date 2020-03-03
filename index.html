@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html>
 
 <head>
 
 <meta charset="utf-8" />
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="generator" content="pandoc" />
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
 
 
 
@@ -78,9 +78,7 @@ h6 {
 </style>
 
 
-</head>
 
-<body>
 
 <style type = "text/css">
 .main-container {
@@ -94,7 +92,6 @@ code {
 }
 img {
   max-width:100%;
-  height: auto;
 }
 .tabbed-pane {
   padding-top: 12px;
@@ -104,6 +101,9 @@ img {
 }
 button.code-folding-btn:focus {
   outline: none;
+}
+summary {
+  display: list-item;
 }
 </style>
 
@@ -119,7 +119,6 @@ body {
   padding-top: 56px;
   margin-top: -56px;
 }
-
 .section h2 {
   padding-top: 56px;
   margin-top: -56px;
@@ -139,6 +138,43 @@ body {
 .section h6 {
   padding-top: 56px;
   margin-top: -56px;
+}
+.dropdown-submenu {
+  position: relative;
+}
+.dropdown-submenu>.dropdown-menu {
+  top: 0;
+  left: 100%;
+  margin-top: -6px;
+  margin-left: -1px;
+  border-radius: 0 6px 6px 6px;
+}
+.dropdown-submenu:hover>.dropdown-menu {
+  display: block;
+}
+.dropdown-submenu>a:after {
+  display: block;
+  content: " ";
+  float: right;
+  width: 0;
+  height: 0;
+  border-color: transparent;
+  border-style: solid;
+  border-width: 5px 0 5px 5px;
+  border-left-color: #cccccc;
+  margin-top: 5px;
+  margin-right: -10px;
+}
+.dropdown-submenu:hover>a:after {
+  border-left-color: #ffffff;
+}
+.dropdown-submenu.pull-left {
+  float: none;
+}
+.dropdown-submenu.pull-left>.dropdown-menu {
+  left: -100%;
+  margin-left: 10px;
+  border-radius: 6px 0 6px 6px;
 }
 </style>
 
@@ -160,19 +196,74 @@ $(document).ready(function () {
 });
 </script>
 
-
-<div class="container-fluid main-container">
-
 <!-- tabsets -->
-<script>
-$(document).ready(function () {
-  window.buildTabsets("TOC");
-});
-</script>
+
+<style type="text/css">
+.tabset-dropdown > .nav-tabs {
+  display: inline-table;
+  max-height: 500px;
+  min-height: 44px;
+  overflow-y: auto;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.tabset-dropdown > .nav-tabs > li.active:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
+  content: "&#xe258;";
+  border: none;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs > li.active {
+  display: block;
+}
+
+.tabset-dropdown > .nav-tabs > li > a,
+.tabset-dropdown > .nav-tabs > li > a:focus,
+.tabset-dropdown > .nav-tabs > li > a:hover {
+  border: none;
+  display: inline-block;
+  border-radius: 4px;
+  background-color: transparent;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li {
+  display: block;
+  float: none;
+}
+
+.tabset-dropdown > .nav-tabs > li {
+  display: none;
+}
+</style>
 
 <!-- code folding -->
 
 
+
+
+</head>
+
+<body>
+
+
+<div class="container-fluid main-container">
 
 
 
@@ -219,6 +310,9 @@ $(document).ready(function () {
     </li>
   </ul>
 </li>
+<li>
+  <a href="02-Research.html">Research</a>
+</li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
         
@@ -232,28 +326,27 @@ $(document).ready(function () {
 
 
 <h1 class="title toc-ignore">Robin Elahi, PhD</h1>
-<h3 class="subtitle"><em>Hopkins Marine Station, Stanford University</em></h3>
+<h3 class="subtitle">Hopkins Marine Station, Stanford University</h3>
 
 </div>
 
 
-<p>I am a lecturer at Stanford University’s Hopkins Marine Station, where I teach courses in kelp forest ecology, statistics, and scientific computing. This site serves as the central teaching repository. I also maintain some relevant material for setting up R and related software - see the navigation bar above for details.</p>
-<p> </p>
-<div id="courses" class="section level2">
-<h2>Courses</h2>
+<p>I am a lecturer at Stanford University’s Hopkins Marine Station, where I teach courses in marine ecology, invertebrate zoology, and statistics. This site serves as the central teaching repository. I also maintain some relevant material for setting up R and related software - see the navigation bar above for details.</p>
 <p>A list of the courses offered at Hopkins Marine Station can be found here:</p>
 <p><a href="https://exploredegrees.stanford.edu/coursedescriptions/biohopk/">https://exploredegrees.stanford.edu/coursedescriptions/biohopk/</a></p>
 <p>Applications for the undergraduate program can be found here:</p>
 <p><a href="https://hopkinsmarinestation.stanford.edu/education/undergraduate-studies/apply-undergraduate-program">https://hopkinsmarinestation.stanford.edu/education/undergraduate-studies/apply-undergraduate-program</a></p>
+<p>A bit more info on my current (and past) courses can be found below.</p>
 <p> </p>
-<p>A bit more info on upcoming (and past) courses can be found below:</p>
-<p> </p>
-<div id="historical-ecology-of-marine-invertebrates-biohopk-142h" class="section level3">
-<h3>Historical Ecology of Marine Invertebrates (Biohopk-142h)</h3>
-<p>This course is an exploration of the local invertebrate fauna at Hopkins Marine Station, through the lens of a long-term monitoring study initiated by Hewatt in 1931. During week 1, lectures will provide an overview of the major groups represented on rocky intertidal shores. In the laboratory, students will focus on species identification. These skills will be put to use in week 2, when students will collaborate as a team to quantify the abundance of ~100 species in the field and thus contribute to long-term monitoring in the Hopkins Marine Life Observatory. During week 3, students will investigate a relevant organismal or ecological problem.</p>
-<p><a href="images/biohopk_142_flier.pdf">Course flier</a></p>
-<p>Offered Winter 2020.<br />
-<!-- [https://elahi.github.io/xdp/](https://elahi.github.io/xdp/) --></p>
+<div id="current-courses-2020" class="section level2">
+<h2>Current courses (2020)</h2>
+<div id="ecology-and-conservation-of-kelp-forest-communities-biohopk-185h" class="section level3">
+<h3>Ecology and Conservation of Kelp Forest Communities (Biohopk-185h)</h3>
+<p>Five week course. Daily lectures, labs, and scuba dives focused on scientific diving and quantitative ecological methods in kelp forests. Students will be trained as scientific divers in accordance with the standards set by the American Academy of Underwater Scientists (AAUS). Topics include identification and natural history of resident organisms, ecological processes, and subtidal field techniques. Class projects will contribute to long-term monitoring at Hopkins Marine Station. <strong>Prerequisites: consent of instructor, advanced SCUBA certification, a minimum of 12 open water dives in temperate waters, and SCUBA equipment (HMS can provide tanks).</strong></p>
+<p>Offered Summer 2020.</p>
+<p><a href="images/KelpDiveFlyer2020_GradientOutline.png">Course flier</a></p>
+<p><em>The dates for this course will be June 22-July 24, 2020. The priority application deadline is March 15, 2020, and the final deadline is April 15, 2020. </em></p>
+<p><a href="https://hopkinsmarinestation.stanford.edu/webforms/hopkins-summer-undergrad-application-form">https://hopkinsmarinestation.stanford.edu/webforms/hopkins-summer-undergrad-application-form</a></p>
 <p> </p>
 </div>
 <div id="marine-science-and-conservation-in-a-changing-world-biohopk-175h" class="section level3">
@@ -272,14 +365,16 @@ We will explore the biodiversity of coastal ecosystems in Monterey Bay, with par
 <!-- [https://elahi.github.io/xdp/](https://elahi.github.io/xdp/) --></p>
 <p> </p>
 </div>
-<div id="ecology-and-conservation-of-kelp-forest-communities-biohopk-185h" class="section level3">
-<h3>Ecology and Conservation of Kelp Forest Communities (Biohopk-185h)</h3>
-<p>Five week course. Daily lectures, labs, and scuba dives focused on scientific diving and quantitative ecological methods in kelp forests. Students will be trained as scientific divers in accordance with the standards set by the American Academy of Underwater Scientists (AAUS). Topics include identification and natural history of resident organisms, ecological processes, and subtidal field techniques. Class projects will contribute to long-term monitoring at Hopkins Marine Station. <strong>Prerequisites: consent of instructor, advanced SCUBA certification, a minimum of 12 open water dives in temperate waters, and SCUBA equipment (HMS can provide tanks).</strong></p>
-<p>Offered Summer 2020.</p>
-<p><em>The dates for this course will be June 22-July 24, 2020. The application is due March 1, and will be posted here when it is live:</em></p>
-<!-- [https://hopkinsmarinestation.stanford.edu/webforms/hopkins-summer-undergrad-application-form](https://hopkinsmarinestation.stanford.edu/webforms/hopkins-summer-undergrad-application-form) -->
+<div id="historical-ecology-of-marine-invertebrates-biohopk-142h" class="section level3">
+<h3>Historical Ecology of Marine Invertebrates (Biohopk-142h)</h3>
+<p>This course is an exploration of the local invertebrate fauna at Hopkins Marine Station, through the lens of a long-term monitoring study initiated by Hewatt in 1931. During week 1, lectures will provide an overview of the major groups represented on rocky intertidal shores. In the laboratory, students will focus on species identification. These skills will be put to use in week 2, when students will collaborate as a team to quantify the abundance of ~100 species in the field and thus contribute to long-term monitoring in the Hopkins Marine Life Observatory. During week 3, students will investigate a relevant organismal or ecological problem.</p>
+<p><a href="images/biohopk_142_flier.pdf">Course flier</a></p>
+<p>Offered Winter 2020.</p>
 <p> </p>
 </div>
+</div>
+<div id="past-courses" class="section level2">
+<h2>Past courses</h2>
 <div id="statistical-modeling-biohopk-140h" class="section level3">
 <h3>Statistical Modeling (Biohopk-140h)</h3>
 <p>Introduction to applied statistical modeling in a Bayesian framework. Topics will include probability, regression, model comparison, and hierarchical modeling. We will take a hands-on, computational approach (R, Stan) to gain intuition so that students can later design their own inferential models. Prerequisites for this course include introductory statistics and some calculus or linear algebra, as well as previous exposure to scientific computing. Open to graduate students; undergraduate students may enroll with consent of instructor.</p>
@@ -323,6 +418,23 @@ $(document).ready(function () {
 
 
 </script>
+
+<!-- tabsets -->
+
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+
+$(document).ready(function () {
+  $('.tabset-dropdown > .nav-tabs > li').click(function () {
+    $(this).parent().toggleClass('nav-tabs-open')
+  });
+});
+</script>
+
+<!-- code folding -->
+
 
 <!-- dynamically load mathjax for compatibility with self-contained -->
 <script>
