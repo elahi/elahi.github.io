@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 
-<html>
+<html xmlns="http://www.w3.org/1999/xhtml">
 
 <head>
 
 <meta charset="utf-8" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="generator" content="pandoc" />
-<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
 
 
 
@@ -95,6 +95,7 @@ code {
 }
 img {
   max-width:100%;
+  height: auto;
 }
 .tabbed-pane {
   padding-top: 12px;
@@ -243,7 +244,6 @@ $(document).ready(function () {
   border: none;
   display: inline-block;
   border-radius: 4px;
-  background-color: transparent;
 }
 
 .tabset-dropdown > .nav-tabs.nav-tabs-open > li {
@@ -256,9 +256,48 @@ $(document).ready(function () {
 }
 </style>
 
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+
+$(document).ready(function () {
+  $('.tabset-dropdown > .nav-tabs > li').click(function () {
+    $(this).parent().toggleClass('nav-tabs-open')
+  });
+});
+</script>
+
 <!-- code folding -->
 
 
+
+<script>
+$(document).ready(function ()  {
+
+    // move toc-ignore selectors from section div to header
+    $('div.section.toc-ignore')
+        .removeClass('toc-ignore')
+        .children('h1,h2,h3,h4,h5').addClass('toc-ignore');
+
+    // establish options
+    var options = {
+      selectors: "h1,h2,h3",
+      theme: "bootstrap3",
+      context: '.toc-content',
+      hashGenerator: function (text) {
+        return text.replace(/[.\\/?&!#<>]/g, '').replace(/\s/g, '_').toLowerCase();
+      },
+      ignoreSelector: ".toc-ignore",
+      scrollTo: 0
+    };
+    options.showAndHide = true;
+    options.smoothScroll = true;
+
+    // tocify
+    var toc = $("#TOC").tocify(options).data("toc-tocify");
+});
+</script>
 
 <style type="text/css">
 
@@ -272,12 +311,6 @@ $(document).ready(function () {
 }
 }
 
-@media print {
-.toc-content {
-  /* see https://github.com/w3c/csswg-drafts/issues/4434 */
-  float: right;
-}
-}
 
 .toc-content {
   padding-left: 30px;
@@ -313,6 +346,8 @@ div.tocify {
 
 .tocify-subheader .tocify-item {
   font-size: 0.90em;
+  padding-left: 25px;
+  text-indent: 0;
 }
 
 .tocify .list-group-item {
@@ -432,7 +467,7 @@ div.tocify {
 <li>Make sure your local repository on your computer is up to date with your fork of the repository on your GitHub account using <code>git pull</code>.</li>
 </ul></li>
 <li>Work on the .Rmd file for your lesson in R Studio on your computer. Click ‘Knit’ to render your changes as an html file and view them in your browser. Note that any edits you make are only on your computer until you submit a pull request to merge your changes to the repository. Make sure that when you have made your last edit to the .Rmd file you click ‘Knit’ so that an up-to-date html file is generated. The html file will be the one that appears on the website.</li>
-<li>Commit the changes you make periodically to your local repository using <code>git commit -m "changes you made"</code>.</li>
+<li>Commit the changes you make periodically to your local repository using <code>git commit -m &quot;changes you made&quot;</code>.</li>
 <li>When you are finished, push the commits from your local repository to your fork on your GitHub account using <code>git push origin master</code>.</li>
 <li>Submit a pull request on GitHub to merge the changes on your fork with the original elahi/biohopk-140h repository no later than 8 am on the day you present. Robin will approve your pull request.</li>
 </ol>
@@ -474,7 +509,7 @@ div.tocify {
 <hr />
 <blockquote>
 <p>Attribution</p>
-<p>The content of this webpage was derived from <a href="http://datacarpentry.org">Data Carpentry</a> and <a href="http://software-carpentry.org">Software Carpentry</a> materials (Copyright (c) Data Carpentry) under CC-3.0 Attribution License (see <a href="http://creativecommons.org/licenses/by/3.0/">http://creativecommons.org/licenses/by/3.0/</a>).</p>
+<p>The content of this webpage was derived from <a href="http://datacarpentry.org">Data Carpentry</a> and <a href="http://software-carpentry.org">Software Carpentry</a> materials (Copyright (c) Data Carpentry) under CC-3.0 Attribution License (see <a href="http://creativecommons.org/licenses/by/3.0/" class="uri">http://creativecommons.org/licenses/by/3.0/</a>).</p>
 </blockquote>
 </div>
 </div>
@@ -498,49 +533,6 @@ $(document).ready(function () {
 });
 
 
-</script>
-
-<!-- tabsets -->
-
-<script>
-$(document).ready(function () {
-  window.buildTabsets("TOC");
-});
-
-$(document).ready(function () {
-  $('.tabset-dropdown > .nav-tabs > li').click(function () {
-    $(this).parent().toggleClass('nav-tabs-open')
-  });
-});
-</script>
-
-<!-- code folding -->
-
-<script>
-$(document).ready(function ()  {
-
-    // move toc-ignore selectors from section div to header
-    $('div.section.toc-ignore')
-        .removeClass('toc-ignore')
-        .children('h1,h2,h3,h4,h5').addClass('toc-ignore');
-
-    // establish options
-    var options = {
-      selectors: "h1,h2,h3",
-      theme: "bootstrap3",
-      context: '.toc-content',
-      hashGenerator: function (text) {
-        return text.replace(/[.\\/?&!#<>]/g, '').replace(/\s/g, '_').toLowerCase();
-      },
-      ignoreSelector: ".toc-ignore",
-      scrollTo: 0
-    };
-    options.showAndHide = true;
-    options.smoothScroll = true;
-
-    // tocify
-    var toc = $("#TOC").tocify(options).data("toc-tocify");
-});
 </script>
 
 <!-- dynamically load mathjax for compatibility with self-contained -->

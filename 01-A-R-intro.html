@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 
-<html>
+<html xmlns="http://www.w3.org/1999/xhtml">
 
 <head>
 
 <meta charset="utf-8" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="generator" content="pandoc" />
-<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
 
 
 
@@ -92,6 +92,7 @@ code {
 }
 img {
   max-width:100%;
+  height: auto;
 }
 .tabbed-pane {
   padding-top: 12px;
@@ -240,7 +241,6 @@ $(document).ready(function () {
   border: none;
   display: inline-block;
   border-radius: 4px;
-  background-color: transparent;
 }
 
 .tabset-dropdown > .nav-tabs.nav-tabs-open > li {
@@ -252,6 +252,18 @@ $(document).ready(function () {
   display: none;
 }
 </style>
+
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+
+$(document).ready(function () {
+  $('.tabset-dropdown > .nav-tabs > li').click(function () {
+    $(this).parent().toggleClass('nav-tabs-open')
+  });
+});
+</script>
 
 <!-- code folding -->
 
@@ -335,7 +347,7 @@ $(document).ready(function () {
 <ul>
 <li>R is a widely-used program for statistical computing.</li>
 <li>RStudio is a program that allows users to easily document and run reproducible analyses with R.</li>
-<li>Analyses are saved as text files (e.g. “code”) that can be re-run and edited as a reproducible record of the research process.</li>
+<li>Analyses are saved as text files (e.g. “code”) that can be re-run and edited as a reproducible record of the research process.</li>
 <li>Well-organized research projects have clear locations for saving code, data, and analysis output (figures, tables, written documents).</li>
 <li>Organizing an analysis as an RStudio project makes it easy to collaborate on research because the directory structure is self-contained, facilitating file transfer and version control.</li>
 </ul>
@@ -364,7 +376,7 @@ $(document).ready(function () {
 </div>
 <div id="how-r-works" class="section level3">
 <h3>How R works</h3>
-<div id="code-vs.-the-console" class="section level4">
+<div id="code-vs.the-console" class="section level4">
 <h4>Code vs. The Console</h4>
 <p>R is a fancy calculator that can remember previous calculations and store them for future use (see the section Objects and Functions). You can use R by typing commands directing into the console. For example, try doing some simple arithmetic. Place your cursor in the Console window in front of the <code>&gt;</code> symbol and type <code>3 + 5</code>. Then press Enter.</p>
 <blockquote>
@@ -419,23 +431,6 @@ $(document).ready(function () {
 
 
 </script>
-
-<!-- tabsets -->
-
-<script>
-$(document).ready(function () {
-  window.buildTabsets("TOC");
-});
-
-$(document).ready(function () {
-  $('.tabset-dropdown > .nav-tabs > li').click(function () {
-    $(this).parent().toggleClass('nav-tabs-open')
-  });
-});
-</script>
-
-<!-- code folding -->
-
 
 <!-- dynamically load mathjax for compatibility with self-contained -->
 <script>

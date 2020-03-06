@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 
-<html>
+<html xmlns="http://www.w3.org/1999/xhtml">
 
 <head>
 
 <meta charset="utf-8" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="generator" content="pandoc" />
-<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
 
 
 
@@ -92,6 +92,7 @@ code {
 }
 img {
   max-width:100%;
+  height: auto;
 }
 .tabbed-pane {
   padding-top: 12px;
@@ -240,7 +241,6 @@ $(document).ready(function () {
   border: none;
   display: inline-block;
   border-radius: 4px;
-  background-color: transparent;
 }
 
 .tabset-dropdown > .nav-tabs.nav-tabs-open > li {
@@ -252,6 +252,18 @@ $(document).ready(function () {
   display: none;
 }
 </style>
+
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+
+$(document).ready(function () {
+  $('.tabset-dropdown > .nav-tabs > li').click(function () {
+    $(this).parent().toggleClass('nav-tabs-open')
+  });
+});
+</script>
 
 <!-- code folding -->
 
@@ -449,7 +461,7 @@ my_kg &lt;- my_lbs * 0.45359237</code></pre>
 </div>
 <div id="figures" class="section level4">
 <h4>Figures</h4>
-<p>Any figure that you make in a code chunk will by default be saved as separate files in your working directory and then imported into the final document created by <code>pandoc</code>. For these webpages, the first code chunk specifies: <code>knitr::opts_chunk$set(fig.path = "images/")</code>, which tells <code>knitr</code> that it should save any figures generated with code chunks to a folder named “images” within the working directory. The image files will be named according to the name of the code chunk from which they are generated. Hence, it is a good idea to separate analyses into separate code chunks and give them somewhat descriptive names. R markdown can also automatically number and caption your figures and tables. The <a href="https://cran.r-project.org/web/packages/captioner/vignettes/using_captioner.html"><code>captioner</code></a> package is particularly useful for this.</p>
+<p>Any figure that you make in a code chunk will by default be saved as separate files in your working directory and then imported into the final document created by <code>pandoc</code>. For these webpages, the first code chunk specifies: <code>knitr::opts_chunk$set(fig.path = &quot;images/&quot;)</code>, which tells <code>knitr</code> that it should save any figures generated with code chunks to a folder named “images” within the working directory. The image files will be named according to the name of the code chunk from which they are generated. Hence, it is a good idea to separate analyses into separate code chunks and give them somewhat descriptive names. R markdown can also automatically number and caption your figures and tables. The <a href="https://cran.r-project.org/web/packages/captioner/vignettes/using_captioner.html"><code>captioner</code></a> package is particularly useful for this.</p>
 <blockquote>
 <p><strong>Exercise:</strong></p>
 <ol style="list-style-type: decimal">
@@ -477,23 +489,6 @@ $(document).ready(function () {
 
 
 </script>
-
-<!-- tabsets -->
-
-<script>
-$(document).ready(function () {
-  window.buildTabsets("TOC");
-});
-
-$(document).ready(function () {
-  $('.tabset-dropdown > .nav-tabs > li').click(function () {
-    $(this).parent().toggleClass('nav-tabs-open')
-  });
-});
-</script>
-
-<!-- code folding -->
-
 
 <!-- dynamically load mathjax for compatibility with self-contained -->
 <script>

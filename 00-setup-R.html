@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 
-<html>
+<html xmlns="http://www.w3.org/1999/xhtml">
 
 <head>
 
 <meta charset="utf-8" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="generator" content="pandoc" />
-<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
 
 
 
@@ -92,6 +92,7 @@ code {
 }
 img {
   max-width:100%;
+  height: auto;
 }
 .tabbed-pane {
   padding-top: 12px;
@@ -240,7 +241,6 @@ $(document).ready(function () {
   border: none;
   display: inline-block;
   border-radius: 4px;
-  background-color: transparent;
 }
 
 .tabset-dropdown > .nav-tabs.nav-tabs-open > li {
@@ -252,6 +252,18 @@ $(document).ready(function () {
   display: none;
 }
 </style>
+
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+
+$(document).ready(function () {
+  $('.tabset-dropdown > .nav-tabs > li').click(function () {
+    $(this).parent().toggleClass('nav-tabs-open')
+  });
+});
+</script>
 
 <!-- code folding -->
 
@@ -382,13 +394,13 @@ $(document).ready(function () {
 <ul>
 <li>Follow the instructions for your distribution from <a href="https://cloud.r-project.org/bin/linux">CRAN</a>, they provide information to get the most recent version of R for common distributions. For most distributions, you could use your package manager (e.g., for Debian/Ubuntu run <code>sudo apt-get install r-base</code>, and for Fedora <code>sudo yum install R</code>), but we don’t recommend this approach as the versions provided by this are usually out of date. In any case, make sure you have at least R 3.3.1.</li>
 <li>Go to the <a href="https://www.rstudio.com/products/rstudio/download/#download">RStudio download page</a></li>
-<li>Under <em>Installers</em> select the version that matches your distribution, and install it with your preferred method (e.g., with Debian/Ubuntu <code>sudo dpkg -i rstudio-x.yy.zzz-amd64.deb</code> at the terminal).</li>
+<li>Under <em>Installers</em> select the version that matches your distribution, and install it with your preferred method (e.g., with Debian/Ubuntu <code>sudo dpkg -i   rstudio-x.yy.zzz-amd64.deb</code> at the terminal).</li>
 <li>Once it’s installed, open RStudio to make sure it works and you don’t get any error messages.</li>
 </ul>
 <hr />
 <blockquote>
 <p>Attribution</p>
-<p>The content of this webpage was derived from <a href="http://datacarpentry.org">Data Carpentry</a> and <a href="http://software-carpentry.org">Software Carpentry</a> materials (Copyright (c) Data Carpentry) under CC-3.0 Attribution License (see <a href="http://creativecommons.org/licenses/by/3.0/">http://creativecommons.org/licenses/by/3.0/</a>).</p>
+<p>The content of this webpage was derived from <a href="http://datacarpentry.org">Data Carpentry</a> and <a href="http://software-carpentry.org">Software Carpentry</a> materials (Copyright (c) Data Carpentry) under CC-3.0 Attribution License (see <a href="http://creativecommons.org/licenses/by/3.0/" class="uri">http://creativecommons.org/licenses/by/3.0/</a>).</p>
 </blockquote>
 </div>
 </div>
@@ -410,23 +422,6 @@ $(document).ready(function () {
 
 
 </script>
-
-<!-- tabsets -->
-
-<script>
-$(document).ready(function () {
-  window.buildTabsets("TOC");
-});
-
-$(document).ready(function () {
-  $('.tabset-dropdown > .nav-tabs > li').click(function () {
-    $(this).parent().toggleClass('nav-tabs-open')
-  });
-});
-</script>
-
-<!-- code folding -->
-
 
 <!-- dynamically load mathjax for compatibility with self-contained -->
 <script>
