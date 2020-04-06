@@ -27,35 +27,19 @@ Applications for the undergraduate program can be found here:
 
 [https://hopkinsmarinestation.stanford.edu/education/undergraduate-studies/apply-undergraduate-program](https://hopkinsmarinestation.stanford.edu/education/undergraduate-studies/apply-undergraduate-program)
 
-A bit more info on my current (and past) courses can be found below. 
+**Due to the COVID-19 crisis, we have cancelled all courses for spring and summer 2020 at Hopkins Marine Station.**
+
+A bit more info on upcoming and past courses can be found below. 
 
 \  
 
-
-## Current courses (2020)
-
-### Ecology and Conservation of Kelp Forest Communities (Biohopk-185h)
-
-Five week course. Daily lectures, labs, and scuba dives focused on scientific diving and quantitative ecological methods in kelp forests. Students will be trained as scientific divers in accordance with the standards set by the American Academy of Underwater Scientists (AAUS). Topics include identification and natural history of resident organisms, ecological processes, and subtidal field techniques. Class projects will contribute to long-term monitoring at Hopkins Marine Station. **Prerequisites: consent of instructor, advanced SCUBA certification, a minimum of 12 open water dives in temperate waters, and SCUBA equipment (HMS can provide tanks).**
-
-Offered Summer 2020  
-
-<!-- [Course flier](images/KelpDiveFlyer2020_GradientOutline.png) -->
-
-*The dates for this course will be June 22-July 24, 2020. I will consider applications on a rolling basis starting on March 15, and the final deadline is April 15, 2020. The sooner you apply, the sooner you'll hear back.*
-
-[https://hopkinsmarinestation.stanford.edu/webforms/hopkins-summer-undergrad-application-form](https://hopkinsmarinestation.stanford.edu/webforms/hopkins-summer-undergrad-application-form)
-
-<img src="/images/KelpDiveFlyer2020_GradientOutline.png" alt="" width="800px"/>  
-
-
-\  
+## Upcoming courses (2021)
 
 ### Marine Science and Conservation in a Changing World (Biohopk-175h)
 
 This hands-on, experiential course provides a broad foundation in marine science, and explores emerging opportunities for innovation in the study of life in the sea. Students are resident at Stanford's Hopkins Marine Station in Pacific Grove (90 miles south of main campus) where the diverse organisms and environments of Monterey Bay provide the focus for the course. Class meets daily with lectures, discussions, labs, and field work throughout the day. Three linked concentrations, each 3 weeks long, are taught sequentially to address (1) the extraordinary diversity of marine organisms and habitats, (2) the physiology and behavior of marine animals, and (3) the principles of marine ecology. Connecting these concentrations is a weekly seminar-based discussion of topics in marine conservation. This design permits deep concentration on each subject, and places emphasis on discussion, group dialog, individual exploration, and experiential learning. In the final week of the quarter, students complete an individual capstone project of their choosing. This course fulfills the same laboratory requirement as BIO 47.
  
-Offered Spring 2020    
+To be offered Spring 2021   
 
 I will co-teach the following concentration with Dr. Mark Denny: 
 
@@ -64,12 +48,16 @@ We will explore the biodiversity of coastal ecosystems in Monterey Bay, with par
 
 \  
 
+
+## Past courses
+
 ### Experimental Design and Probability (Biohopk-174h)
 
 Variability is an integral part of biology. Introduction to probability and its use in designing experiments to address biological problems. Focus is on experimental design and the use of linear models in testing hypotheses (e.g., analysis of variance, regression). Students will use R to explore and analyze locally relevant biological datasets. No programming or statistical background is assumed. 
  
-Offered Spring 2020    
-[https://elahi.github.io/xdp/](https://elahi.github.io/xdp/)
+Offered Spring 2019 
+To be offered Spring 2021   
+<!-- [https://elahi.github.io/xdp/](https://elahi.github.io/xdp/) -->
 
 \  
 
@@ -82,8 +70,20 @@ Offered Winter 2020
 
 \  
 
+### Ecology and Conservation of Kelp Forest Communities (Biohopk-185h)
 
-## Past courses
+Five week course. Daily lectures, labs, and scuba dives focused on scientific diving and quantitative ecological methods in kelp forests. Students will be trained as scientific divers in accordance with the standards set by the American Academy of Underwater Scientists (AAUS). Topics include identification and natural history of resident organisms, ecological processes, and subtidal field techniques. Class projects will contribute to long-term monitoring at Hopkins Marine Station. **Prerequisites: consent of instructor, advanced SCUBA certification, a minimum of 12 open water dives in temperate waters, and SCUBA equipment (HMS can provide tanks).**
+
+To be offered Summer 2021
+
+<!-- *The dates for this course will be June 22-July 24, 2020. I will consider applications on a rolling basis starting on March 15, and the final deadline is April 15, 2020. The sooner you apply, the sooner you'll hear back.* -->
+
+<!-- [https://hopkinsmarinestation.stanford.edu/webforms/hopkins-summer-undergrad-application-form](https://hopkinsmarinestation.stanford.edu/webforms/hopkins-summer-undergrad-application-form) -->
+
+<!-- <img src="/images/KelpDiveFlyer2020_GradientOutline.png" alt="" width="800px"/>   -->
+
+
+\  
 
 ### Statistical Modeling (Biohopk-140h)
 
