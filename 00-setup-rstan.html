@@ -334,8 +334,8 @@ $(document).ready(function () {
 <h2>Installing Stan and RStan</h2>
 <p>These instructions are from: <a href="https://github.com/rmcelreath/rethinking" class="uri">https://github.com/rmcelreath/rethinking</a></p>
 <p>Go to <code>http://mc-stan.org</code> and follow the instructions for your platform. The biggest challenge is getting a C++ compiler configured to work with your installation of R. The instructions at the <a href="https://github.com/stan-dev/rstan/wiki/RStan-Getting-Started">RStan getting started website</a> are quite thorough.</p>
-<p>Installing Stan can be a bit complicated on some machines, especially if you haven’t run programs that require a C++ compiler before (if that sentance doesn’t make sense to you, this means you), so please don’t wait until the morning of the workshop to install Stan. Try to install it a few days beforehand, and if you can’t get it to work let me know and I’ll try to help.</p>
-<p>To check that it works, once you’ve succesfully done all the other steps please open R and run the code below. If it works, you’re good to go!</p>
+<p>Installing Stan can be a bit complicated on some machines, especially if you haven’t run programs that require a C++ compiler before (if that sentence doesn’t make sense to you, this means you), so please don’t wait until the morning of class to install Stan. Try to install it a few days beforehand, and if you can’t get it to work let me know and I’ll try to help.</p>
+<p>To check that it works, once you’ve successfully done all the other steps please open R and run the code below. If it works, you’re good to go!</p>
 <pre class="r"><code>library(rstan)
 stanmodelcode &lt;- &quot;
 data {
@@ -363,7 +363,7 @@ traceplot(fit)</code></pre>
 <div id="installing-rethinking" class="section level3">
 <h3>Installing <code>rethinking</code></h3>
 <p>Then you can install <code>rethinking</code> from within R using:</p>
-<pre class="r"><code>install.packages(c(&quot;coda&quot;,&quot;mvtnorm&quot;,&quot;devtools&quot;,&quot;loo&quot;))
+<pre class="r"><code>install.packages(c(&quot;coda&quot;,&quot;mvtnorm&quot;,&quot;devtools&quot;,&quot;loo&quot;,&quot;dagitty&quot;))
 library(devtools)
 devtools::install_github(&quot;rmcelreath/rethinking&quot;)</code></pre>
 <p>More details on <code>rethinking</code> and other packages by Richard McElreath:<br />
