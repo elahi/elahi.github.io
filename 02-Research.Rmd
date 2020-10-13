@@ -35,6 +35,10 @@ Here's a copy of my [**CV**](/cv/Elahi_CV_long_200303.pdf), and my [**Google sch
 
 If you would like a pdf of any of my publications, please contact me - elahi at stanford dot edu. 
 
+**Elahi, R.**, Miller, L.P., and S.Y. Litvin. 2020. *Historical comparisons of body size are sensitive to data availability and ecological context.* [Ecology 101:e03101](https://doi.org/10.1002/ecy.3101)
+
+Micheli, F., Carlton, J., Pearse, J., Selgrath, J., **Elahi, R.**, Watanabe, J., Mach, M.E., McDevitt-Irwin, J., Pearse, V., Burnett, N., and C. Baxter. 2020. Field stations as sentinels of change. [Frontiers in Ecology and the Environment 18:320-322](https://doi.org/10.1002/fee.2231)
+
 **Elahi, R.**, Ferretti, F., Bastari, A., Cerrano, C., Colloca, F., Kowalik, J., Ruckelshaus, M., Struck, A. and F. Micheli. 2018. *Leveraging vessel traffic data and a temporary fishing closure to inform marine management.* [Frontiers in Ecology and Environment 16:440-446](https://doi.org/10.1002/fee.1936)
 
 Guest, J.R., Edmunds, P.J., Gates, R.D., Kuffner, I.B., Andersonn, A.J., Barnes, B.B., Chollett, I., Courtney, T.A.,  **Elahi, R.**, Gross, K., Lenz, E.A., Mitarai, S., Mumby, P.J., Nelson, H.R., Parker, B.A., Putnam, H.M., Rogers, C.S. and L.T. Toth. 2018. *A framework for identifying and characterising coral reef “oases” against a backdrop of degradation.* [Journal of Applied Ecology 55: 2865-2875](https://doi.org/10.1111/1365-2664.13179)
@@ -53,6 +57,7 @@ O’Leary, J., Micheli, F., Airoldi L., Boch C., De Leo, G., **Elahi, R.**, Ferr
 Edmunds, P.J. and **R. Elahi.** 2007. *The demographics of a 15-year decline in cover of the Caribbean reef coral Montastraea annularis.* [Ecological Monographs 77:3-18](https://doi.org/10.1890/05-1081)
 
 **Elahi, R.** and P.J. Edmunds. 2007. *Consequences of fission in the coral Siderastrea siderea: growth rates of small colonies and clonal input to population structure.* [Coral Reefs 26:271-276](https://doi.org/10.1007/s00338-006-0190-x)
+
 
 <img src="/images/P1010170_crop.png" alt="San Juan Islands" width="800px"/>  
 *San Juan Islands and Mt. Baker, Washington*
