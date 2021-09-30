@@ -17,11 +17,11 @@ knitr::opts_chunk$set(echo = TRUE)
 repo_url <- "https://raw.githubusercontent.com/elahi/github.io/master/"
 ```
 
-I am a lecturer at Stanford University's Hopkins Marine Station, where I teach courses in marine ecology, invertebrate zoology, and statistics. This site serves as the central teaching repository. I also maintain some relevant material for setting up R and related software - see the navigation bar above for details. 
+I am a lecturer at Stanford University's Hopkins Marine Station, where I teach courses in marine ecology, invertebrate zoology, and statistics. This site serves as the central teaching repository. I also lead an NSF-funded Research Coordination Network in Undergraduate Biology Education [(https://dimes.stanford.edu)](https://dimes.stanford.edu) focused on unifying curriculum across marine stations, with the goal of diversifying participation in marine ecology. 
 
 A list of the courses offered at Hopkins Marine Station can be found here:     
 
-[https://exploredegrees.stanford.edu/coursedescriptions/biohopk/](https://exploredegrees.stanford.edu/coursedescriptions/biohopk/)
+[https://hopkinsmarinestation.stanford.edu/courses](https://hopkinsmarinestation.stanford.edu/courses)
 
 Applications for the undergraduate program can be found here:
 
@@ -29,37 +29,60 @@ Applications for the undergraduate program can be found here:
 
 A bit more info on upcoming and past courses can be found below. 
 
-**As a lecturer, I do not take graduate students.** Please have a look at the list of [research faculty at Hopkins](https://hopkinsmarinestation.stanford.edu/people/faculty) - if a faculty member is a *professor* and NOT emeritus, then s/he may be interested in accepting graduate students, and you should reach out to them. 
+**As a lecturer, I do not take graduate students.** Please have a look at the list of [research faculty at Hopkins](https://hopkinsmarinestation.stanford.edu/people/faculty) - if a faculty member is a professor (and not emeritus), then they may be interested in accepting graduate students, and you should reach out to them. 
 
 \  
 
-## Upcoming courses (2021)
+## Upcoming courses (2022)
+
+### Historical Ecology at Hopkins Marine Station (Biohopk-162h)
+
+This course is an exploration of the rich intertidal flora and fauna at Hopkins Marine Station, through the lens of historical ecology and long-term change. This course will be a hybrid in-person and virtual course, with a field trip to Hopkins Marine Station as the primary component. During weeks 1-7, students will attend in-person discussions with the TA, while the instructor zooms in from Hopkins Marine Station. During week 8, students will go on a field trip to Hopkins Marine Station, the culminating experience in the course. Main campus lectures and discussions will provide an overview of historical ecology and the natural history of rocky shores. In the lab at Hopkins Marine Station, students will focus on species identification and scientific illustration. These skills will be put to use in the field, where we will quantify patterns of intertidal biodiversity. During weeks 9 and 10, students will answer a data-based question and reflect on the long-term data collection. Students will sign up for Fridays, 2-5pm. Open to undergraduate and graduate students (3 units).
+
+Offered Winter 2022
+
+\
 
 ### Statistical Modeling (Biohopk-140h)
 
 Introduction to applied statistical modeling in a Bayesian framework. Topics will include probability, regression, model comparison, and hierarchical modeling. We will take a hands-on, computational approach (R, Stan) to gain intuition so that students can later design their own inferential models. Prerequisites for this course include introductory statistics and some calculus or linear algebra, as well as previous exposure to scientific computing. Open to graduate students; undergraduate students may enroll with consent of instructor.
 
-Offered Winter 2021     
-[https://elahi.github.io/biohopk-140h/](https://elahi.github.io/biohopk-140h/)  
+Offered Spring 2021  
+<!-- [https://elahi.github.io/biohopk-140h/](https://elahi.github.io/biohopk-140h/) -->
 
 \
 
-### Invertebrate Zoology (Biohopk-162h)
 
-Survey of invertebrate diversity emphasizing form and function in a phylogenetic framework. Morphological diversity, life histories, physiology, and ecology of the major invertebrate groups, concentrating on local marine forms as examples. Current views on the phylogenetic relationships and evolution of the invertebrates. Lectures, lab, plus field trips.
+### Ecology and Conservation of Kelp Forest Communities (Biohopk-185h)
 
-Offered Spring 2021
+Five week course. Daily lectures, labs, and scuba dives focused on scientific diving and quantitative ecological methods in kelp forests. Students will be trained as scientific divers in accordance with the standards set by the American Academy of Underwater Scientists (AAUS). Topics include identification and natural history of resident organisms, ecological processes, and subtidal field techniques. Class projects will contribute to long-term monitoring at Hopkins Marine Station. **Prerequisites: consent of instructor, advanced SCUBA certification, a minimum of 12 open water dives in temperate waters, and SCUBA equipment (HMS can provide tanks).**
 
-\
+Offered Summer 2022; details forthcoming
 
-### Introduction to Research in Ecology and Ecological Physiology (Biohopk-47)
+<!-- *The dates for this course will be June 22-July 24, 2020. I will consider applications on a rolling basis starting on March 15, and the final deadline is April 15, 2020. The sooner you apply, the sooner you'll hear back.* -->
 
-This course is a field-based inquiry into rocky shores that introduces students to ecology and environmental physiology and the research methods used to study them. Students will learn how to detect patterns quantitatively in nature through appropriate sampling methods & statistical analysis. Following exploration of appropriate background material in class and through exploration of the scientific literature, students will learn how to formulate testable hypotheses regarding the underlying causes of the patterns they discern. A variety of different aspects of ecology and physiology will be investigated cooperatively by the students during the quarter, culminating in development of an individual final paper in the form of a research proposal based on data collected during the course. The course will provide a broad conceptual introduction to the underlying biological principles that influence adaptation to the planet's dynamic habitats, as well as inquiry-based experience in how to explore and understand complex systems in nature.
- 
-Offered Summer 2021    
-Co-taught with Dr. Mark Denny
+<!-- [https://hopkinsmarinestation.stanford.edu/webforms/hopkins-summer-undergrad-application-form](https://hopkinsmarinestation.stanford.edu/webforms/hopkins-summer-undergrad-application-form) -->
 
-\  
+<!-- <img src="/images/KelpDiveFlyer2020_GradientOutline.png" alt="" width="800px"/> -->
+
+
+<!-- ### Invertebrate Zoology (Biohopk-162h) -->
+
+<!-- Survey of invertebrate diversity emphasizing form and function in a phylogenetic framework. Morphological diversity, life histories, physiology, and ecology of the major invertebrate groups, concentrating on local marine forms as examples. Current views on the phylogenetic relationships and evolution of the invertebrates. Lectures, lab, plus field trips. -->
+
+<!-- Offered Spring 2021 -->
+
+<!-- \ -->
+
+<!-- ### Introduction to Research in Ecology and Ecological Physiology (Biohopk-47) -->
+
+<!-- This course is a field-based inquiry into rocky shores that introduces students to ecology and environmental physiology and the research methods used to study them. Students will learn how to detect patterns quantitatively in nature through appropriate sampling methods & statistical analysis. Following exploration of appropriate background material in class and through exploration of the scientific literature, students will learn how to formulate testable hypotheses regarding the underlying causes of the patterns they discern. A variety of different aspects of ecology and physiology will be investigated cooperatively by the students during the quarter, culminating in development of an individual final paper in the form of a research proposal based on data collected during the course. The course will provide a broad conceptual introduction to the underlying biological principles that influence adaptation to the planet's dynamic habitats, as well as inquiry-based experience in how to explore and understand complex systems in nature. -->
+
+<!-- Offered Summer 2021     -->
+<!-- Co-taught with Dr. Mark Denny -->
+
+<!-- \   -->
+
 
 <!-- ### Marine Science and Conservation in a Changing World (Biohopk-175h) -->
 
@@ -96,17 +119,7 @@ Co-taught with Dr. Mark Denny
 
 <!-- \   -->
 
-<!-- ### Ecology and Conservation of Kelp Forest Communities (Biohopk-185h) -->
 
-<!-- Five week course. Daily lectures, labs, and scuba dives focused on scientific diving and quantitative ecological methods in kelp forests. Students will be trained as scientific divers in accordance with the standards set by the American Academy of Underwater Scientists (AAUS). Topics include identification and natural history of resident organisms, ecological processes, and subtidal field techniques. Class projects will contribute to long-term monitoring at Hopkins Marine Station. **Prerequisites: consent of instructor, advanced SCUBA certification, a minimum of 12 open water dives in temperate waters, and SCUBA equipment (HMS can provide tanks).** -->
-
-<!-- To be offered Summer 2021 -->
-
-<!-- *The dates for this course will be June 22-July 24, 2020. I will consider applications on a rolling basis starting on March 15, and the final deadline is April 15, 2020. The sooner you apply, the sooner you'll hear back.* -->
-
-<!-- [https://hopkinsmarinestation.stanford.edu/webforms/hopkins-summer-undergrad-application-form](https://hopkinsmarinestation.stanford.edu/webforms/hopkins-summer-undergrad-application-form) -->
-
-<!-- <img src="/images/KelpDiveFlyer2020_GradientOutline.png" alt="" width="800px"/> -->
 
 
 <!-- \   -->
