@@ -1,0 +1,86 @@
+---
+title: "Teaching"
+output: 
+  html_document: 
+    toc: false
+    toc_depth: 3
+    toc_float: true
+    theme: cosmo
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+
+# Set the web address where R will look for files from this repository
+# Do not change this address
+repo_url <- "https://raw.githubusercontent.com/elahi/github.io/master/"
+```
+
+## Upcoming courses (2023)
+
+### Between Pacific Tides: Invertebrate Zoology in Monterey Bay (BIOHOPK 261H, OCEANS 161, OCEANS 261)
+
+Invertebrates range in size from microscopic mites to giant squid and are integral to ecosystems and their functioning. More than 97% of all described animal species lack a spine, and this course is an introductory survey of invertebrate diversity with an emphasis on intertidal habitats of Monterey Bay. Students will explore the form, function, evolution, and natural history of the major invertebrate groups through lectures, labs, and field trips. Prerequisite: BIO 81 or BIO 85 recommended.
+
+Term: Winter\
+Units: 3\
+UG reqs: WAY-SMA
+
+\
+
+### Statistical Modeling (BIOHOPK 140H, BIOHOPK 240H, OCEANS 140, OCEANS 240)
+
+Introduction to applied statistical modeling in a Bayesian framework. Topics will include probability, regression, model comparison, and hierarchical modeling. We will take a hands-on, computational approach (R, Stan) to gain intuition so that students can later design their own inferential models. Prerequisites for this course include introductory statistics and some calculus or linear algebra, as well as previous exposure to scientific computing. Open to graduate students; undergraduate students may enroll with consent of instructor.
+
+Term: Winter\
+Units: 3
+
+\
+
+### Introduction to Research in Ecology and Ecological Physiology (BIOHOPK 47H, OCEANS 47)
+
+This course is a field-based inquiry into rocky intertidal shores that introduces students to ecology and environmental physiology and the research methods used to study them. Students will learn how to detect patterns quantitatively in nature through appropriate sampling methods. Following exploration of appropriate background material in class and through exploration of the scientific literature, students will formulate testable hypotheses regarding the underlying causes of the patterns they discern. A variety of different aspects of ecology and physiology will be investigated cooperatively by the students during the quarter, culminating in development of an individual final paper in the form of a research proposal based on data collected during the course. The course will provide a broad conceptual introduction to the underlying biological principles that influence adaptation to dynamic habitats, as well as an inquiry-based experience in how to explore complex systems in nature. This course fulfills the same laboratory requirement as BIO 47.
+
+Term: Spring\
+Units: 4\
+UG reqs: WAY-SMA, WIM in Biology
+
+\
+
+### Environmental Change and Marine Biodiversity (BIO 125, BIOHOPK 225H, OCEANS 125, OCEANS 225)
+
+In this course we will study marine biodiversity and the impacts of environmental change on ocean life and marine ecosystems. Students will first study fundamental aspects of physiology, ecology, and evolution in marine animals and plants. Then, students will apply these principles to understand the consequences of environmental change on the functioning of organisms and ecosystems. Through tidepooling, snorkeling, and boating in the living laboratory of the Monterey coast, students will be immersed in the richness and complexity of marine food webs. By contributing to and analyzing historical time series, students will develop an integrative view of the past and future of ocean ecosystems, forming an evidence-based understanding of the consequences of recent anthropogenic influences on ocean biodiversity and associated ecosystem services.
+
+Term: Spring\
+Units: 3\
+Co-taught with M. Denny, J. Goldbogen, S. Johri
+
+\
+
+### Ecology and Conservation of Kelp Forest Communities (BIOHOPK 185H)
+
+Five week course. Daily lectures, labs, and scuba dives focused on scientific diving and quantitative ecological methods in kelp forests. Students will be trained as scientific divers in accordance with the standards set by the American Academy of Underwater Scientists (AAUS). Topics include identification and natural history of resident organisms, ecological processes, and subtidal field techniques. Class projects will contribute to long-term monitoring at Hopkins Marine Station. Prerequisites: consent of instructor, advanced SCUBA certification, a minimum of 12 open water dives in temperate waters, and SCUBA equipment (HMS can provide tanks).
+
+Term: Summer\
+Units: 5\
+UG reqs: WAY-SMA
+
+This is a 5-week course (June 20-July 21, 2023). We will meet 8am-5pm, Monday-Friday. You are also expected to work on assignments outside of class. In other words, this course is a full-time commitment. What is it like to be a student in this class? You can learn about the course from a [Stanford report](https://news.stanford.edu/report/2022/08/23/underwater-scientists-investigate-kelp-forests/?utm_source=Stanford+ALL&utm_campaign=48339550ec-int_COPY_02&utm_medium=email&utm_term=0_c042b4aad7-48339550ec-55725232) and from previous students here: <https://purl.stanford.edu/km092my4610>
+
+PRIORITY deadline: February 15, 2023 (you will be notified of admission by March 1, 2023)
+
+FINAL deadline: April 15, 2022 (you will be notified of admission by May 1, 2023)
+
+When active, the application is here: <https://hopkinsmarinestation.stanford.edu/undergraduate-studies/apply>
+
+![](images/KelpDiveFlyer2020_GradientOutline_NODATE.png)
+
+<!-- ### Historical Ecology at Hopkins Marine Station (BIO166; BIOHOPK 166H) -->
+
+<!-- This course is an exploration of the rich intertidal flora and fauna at Hopkins Marine Station, through the lens of historical ecology and long-term change. This course will be a hybrid in-person and virtual course, with a field trip to Hopkins Marine Station as the primary component. During weeks 1-7, students will attend in-person discussions with the TA, while the instructor zooms in from Hopkins Marine Station. During week 8, students will go on a field trip to Hopkins Marine Station, the culminating experience in the course. Main campus lectures and discussions will provide an overview of historical ecology and the natural history of rocky shores. In the lab at Hopkins Marine Station, students will focus on species identification and scientific illustration. These skills will be put to use in the field, where we will quantify patterns of intertidal biodiversity. During weeks 9 and 10, students will answer a data-based question and reflect on the long-term data collection. Students will sign up for Fridays, 2-5pm. Open to undergraduate and graduate students (3 units). -->
+
+<!-- Offered Winter 2022   -->
+
+<!-- This course requires a student application:   -->
+
+<!-- https://bit.ly/bio166-application -->

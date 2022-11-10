@@ -17,78 +17,24 @@ knitr::opts_chunk$set(echo = TRUE)
 repo_url <- "https://raw.githubusercontent.com/elahi/github.io/master/"
 ```
 
-I am a lecturer at Stanford University's Hopkins Marine Station, where I teach courses in marine ecology, invertebrate zoology, and statistics. This site serves as the central teaching repository. I also lead an NSF-funded Research Coordination Network in Undergraduate Biology Education [(https://dimes.stanford.edu)](https://dimes.stanford.edu) focused on unifying curriculum across marine stations, with the goal of diversifying participation in marine ecology. 
+I am a lecturer at Stanford University's Hopkins Marine Station, where I teach courses in marine ecology, invertebrate zoology, and statistics. I also lead an NSF-funded Research Coordination Network in Undergraduate Biology Education [(https://dimes.stanford.edu)](https://dimes.stanford.edu) focused on unifying curriculum across marine stations, with the goal of diversifying participation in marine ecology. Here's my [**CV**](/cv/Elahi_CV_long_221110.pdf).
 
-A list of the courses offered at Hopkins Marine Station can be found here:     
+A list of the courses offered at Hopkins Marine Station can be found here:
 
-[https://hopkinsmarinestation.stanford.edu/courses](https://hopkinsmarinestation.stanford.edu/courses)
+<https://hopkinsmarinestation.stanford.edu/courses>
 
 Applications for the undergraduate program can be found here:
 
-[https://hopkinsmarinestation.stanford.edu/education/undergraduate-studies/apply-undergraduate-program](https://hopkinsmarinestation.stanford.edu/education/undergraduate-studies/apply-undergraduate-program)
+<https://hopkinsmarinestation.stanford.edu/undergraduate-studies/apply>
 
-A bit more info on upcoming courses can be found below. 
+A bit more info on upcoming courses can be found [here](https://elahi.github.io/courses.html). All of my courses are taught in-person at Hopkins Marine Station.
 
-**As a lecturer, I do not take graduate students.** Please have a look at the list of [research faculty at Hopkins](https://hopkinsmarinestation.stanford.edu/people/faculty) - if a faculty member is a professor (and not emeritus), then they may be interested in accepting graduate students, and you should reach out to them.
+**As a lecturer, I do not take graduate students.** Please have a look at the list of [professors at Hopkins](https://hopkinsmarinestation.stanford.edu/people/faculty) for PhD opportunities.
 
-If you are a Stanford undergraduate student interested in doing intertidal or subtidal research at Hopkins Marine Station, please contact me. 
+If you are a Stanford undergraduate student interested in doing ecological research at Hopkins Marine Station, please contact me.
 
-\  
-
-## Upcoming courses (2022)
-
-### Historical Ecology at Hopkins Marine Station (BIO166; BIOHOPK 166H)
-
-This course is an exploration of the rich intertidal flora and fauna at Hopkins Marine Station, through the lens of historical ecology and long-term change. This course will be a hybrid in-person and virtual course, with a field trip to Hopkins Marine Station as the primary component. During weeks 1-7, students will attend in-person discussions with the TA, while the instructor zooms in from Hopkins Marine Station. During week 8, students will go on a field trip to Hopkins Marine Station, the culminating experience in the course. Main campus lectures and discussions will provide an overview of historical ecology and the natural history of rocky shores. In the lab at Hopkins Marine Station, students will focus on species identification and scientific illustration. These skills will be put to use in the field, where we will quantify patterns of intertidal biodiversity. During weeks 9 and 10, students will answer a data-based question and reflect on the long-term data collection. Students will sign up for Fridays, 2-5pm. Open to undergraduate and graduate students (3 units).
-
-Offered Winter 2022  
-This course requires a student application:  
-https://bit.ly/bio166-application
-
-\
-
-### Introduction to Research in Ecology and Ecological Physiology (BIOHOPK 47H)
-
-This course is a field-based inquiry into rocky intertidal shores that introduces students to ecology and environmental physiology and the research methods used to study them. Students will learn how to detect patterns quantitatively in nature through appropriate sampling methods. Following exploration of appropriate background material in class and through exploration of the scientific literature, students will formulate testable hypotheses regarding the underlying causes of the patterns they discern. A variety of different aspects of ecology and physiology will be investigated cooperatively by the students during the quarter, culminating in development of an individual final paper in the form of a research proposal based on data collected during the course. The course will provide a broad conceptual introduction to the underlying biological principles that influence adaptation to dynamic habitats, as well as an inquiry-based experience in how to explore complex systems in nature. This course fulfills the same laboratory requirement as BIO 47. Satisfies WIM in Biology.
-
-Offered Spring 2022 (in-person at HMS)
-
-\
-
-### Experimental Design and Probability (BIOHOPK 174H)
-
-Nature is inherently variable. Statistics gives us the tools to quantify the uncertainty of our measurements and draw conclusions from data. This course is an introduction to probability, statistical analysis, and experimental design in the context of biological and environmental data. The primary focus is on the use of general linear models (e.g., t-tests, analysis of variance, regression). Students will use R to explore and analyze datasets relevant to the life and ocean sciences. No programming or statistical background is assumed. Graduate students register for 274H.
-
-Offered Spring 2022 (in-person at HMS)
-<!-- [https://elahi.github.io/xdp/](https://elahi.github.io/xdp/) -->
-
-\
-
-### Ecology and Conservation of Kelp Forest Communities (BIOHOPK 185H)
-
-Five week course. Daily lectures, labs, and scuba dives focused on scientific diving and quantitative ecological methods in kelp forests. Students will be trained as scientific divers in accordance with the standards set by the American Academy of Underwater Scientists (AAUS). Topics include identification and natural history of resident organisms, ecological processes, and subtidal field techniques. Class projects will contribute to long-term monitoring at Hopkins Marine Station. **Prerequisites: consent of instructor, advanced SCUBA certification, a minimum of 12 open water dives in temperate waters, and SCUBA equipment (HMS can provide tanks).**
-
-Offered Summer 2022 (in-person at HMS); details forthcoming  
-
-<!-- *The dates for this course will be June 22-July 24, 2020. I will consider applications on a rolling basis starting on March 15, and the final deadline is April 15, 2020. The sooner you apply, the sooner you'll hear back.* -->
-
-<!-- [https://hopkinsmarinestation.stanford.edu/webforms/hopkins-summer-undergrad-application-form](https://hopkinsmarinestation.stanford.edu/webforms/hopkins-summer-undergrad-application-form) -->
-
-<!-- <img src="/images/KelpDiveFlyer2020_GradientOutline.png" alt="" width="800px"/> -->
-
-
-<!-- ### Statistical Modeling (BIOHOPK 140h) -->
-
-<!-- Introduction to applied statistical modeling in a Bayesian framework. Topics will include probability, regression, model comparison, and hierarchical modeling. We will take a hands-on, computational approach (R, Stan) to gain intuition so that students can later design their own inferential models. Prerequisites for this course include introductory statistics and some calculus or linear algebra, as well as previous exposure to scientific computing. Open to graduate students; undergraduate students may enroll with consent of instructor. -->
-
-<!-- Offered Spring 2022   -->
-<!-- <!-- [https://elahi.github.io/biohopk-140h/](https://elahi.github.io/biohopk-140h/) --> -->
-
-<!-- \ -->
+ ![Credit: Freya Sommer](images/IMG_4084_sommer.JPG)
 
 ## Contact
 
-elahi at stanford dot edu  
-
-
-
+elahi at stanford dot edu

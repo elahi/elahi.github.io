@@ -13,12 +13,22 @@
 
 <title>Introduction to R markdown</title>
 
-<script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
+<script src="site_libs/header-attrs-2.16/header-attrs.js"></script>
+<script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link href="site_libs/bootstrap-3.3.5/css/cosmo.min.css" rel="stylesheet" />
 <script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
 <script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
 <script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<style>h1 {font-size: 34px;}
+       h1.title {font-size: 38px;}
+       h2 {font-size: 30px;}
+       h3 {font-size: 24px;}
+       h4 {font-size: 18px;}
+       h5 {font-size: 16px;}
+       h6 {font-size: 12px;}
+       code {color: inherit; background-color: rgba(0, 0, 0, 0.04);}
+       pre:not([class]) { background-color: white }</style>
 <script src="site_libs/navigation-1.1/tabsets.js"></script>
 <link href="site_libs/highlightjs-9.12.0/default.css" rel="stylesheet" />
 <script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
@@ -32,12 +42,16 @@
   gtag('config', 'UA-121894527-1');
 </script>
 
-<style type="text/css">code{white-space: pre;}</style>
 <style type="text/css">
-  pre:not([class]) {
-    background-color: white;
-  }
-</style>
+  code{white-space: pre-wrap;}
+  span.smallcaps{font-variant: small-caps;}
+  span.underline{text-decoration: underline;}
+  div.column{display: inline-block; vertical-align: top; width: 50%;}
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+  ul.task-list{list-style: none;}
+    </style>
+
+<style type="text/css">code{white-space: pre;}</style>
 <script type="text/javascript">
 if (window.hljs) {
   hljs.configure({languages: []});
@@ -50,32 +64,8 @@ if (window.hljs) {
 
 
 
-<style type="text/css">
-h1 {
-  font-size: 34px;
-}
-h1.title {
-  font-size: 38px;
-}
-h2 {
-  font-size: 30px;
-}
-h3 {
-  font-size: 24px;
-}
-h4 {
-  font-size: 18px;
-}
-h5 {
-  font-size: 16px;
-}
-h6 {
-  font-size: 12px;
-}
-.table th:not([align]) {
-  text-align: left;
-}
-</style>
+
+
 
 
 
@@ -85,10 +75,6 @@ h6 {
   max-width: 940px;
   margin-left: auto;
   margin-right: auto;
-}
-code {
-  color: inherit;
-  background-color: rgba(0, 0, 0, 0.04);
 }
 img {
   max-width:100%;
@@ -105,40 +91,16 @@ button.code-folding-btn:focus {
 summary {
   display: list-item;
 }
+details > summary > p:only-child {
+  display: inline;
+}
+pre code {
+  padding: 0;
+}
 </style>
 
 
 <style type="text/css">
-/* padding for bootstrap navbar */
-body {
-  padding-top: 51px;
-  padding-bottom: 40px;
-}
-/* offset scroll position for anchor links (for fixed navbar)  */
-.section h1 {
-  padding-top: 56px;
-  margin-top: -56px;
-}
-.section h2 {
-  padding-top: 56px;
-  margin-top: -56px;
-}
-.section h3 {
-  padding-top: 56px;
-  margin-top: -56px;
-}
-.section h4 {
-  padding-top: 56px;
-  margin-top: -56px;
-}
-.section h5 {
-  padding-top: 56px;
-  margin-top: -56px;
-}
-.section h6 {
-  padding-top: 56px;
-  margin-top: -56px;
-}
 .dropdown-submenu {
   position: relative;
 }
@@ -166,7 +128,7 @@ body {
   margin-right: -10px;
 }
 .dropdown-submenu:hover>a:after {
-  border-left-color: #ffffff;
+  border-left-color: #adb5bd;
 }
 .dropdown-submenu.pull-left {
   float: none;
@@ -178,7 +140,7 @@ body {
 }
 </style>
 
-<script>
+<script type="text/javascript">
 // manage active state of menu based on current page
 $(document).ready(function () {
   // active menu anchor
@@ -188,11 +150,28 @@ $(document).ready(function () {
     href = "index.html";
   var menuAnchor = $('a[href="' + href + '"]');
 
-  // mark it active
-  menuAnchor.parent().addClass('active');
+  // mark the anchor link active (and if it's in a dropdown, also mark that active)
+  var dropdown = menuAnchor.closest('li.dropdown');
+  if (window.bootstrap) { // Bootstrap 4+
+    menuAnchor.addClass('active');
+    dropdown.find('> .dropdown-toggle').addClass('active');
+  } else { // Bootstrap 3
+    menuAnchor.parent().addClass('active');
+    dropdown.addClass('active');
+  }
 
-  // if it's got a parent navbar menu mark it active as well
-  menuAnchor.closest('li.dropdown').addClass('active');
+  // Navbar adjustments
+  var navHeight = $(".navbar").first().height() + 15;
+  var style = document.createElement('style');
+  var pt = "padding-top: " + navHeight + "px; ";
+  var mt = "margin-top: -" + navHeight + "px; ";
+  var css = "";
+  // offset scroll position for anchor links (for fixed navbar)
+  for (var i = 1; i <= 6; i++) {
+    css += ".section h" + i + "{ " + pt + mt + "}\n";
+  }
+  style.innerHTML = "body {" + pt + "padding-bottom: 40px; }\n" + css;
+  document.head.appendChild(style);
 });
 </script>
 
@@ -204,7 +183,6 @@ $(document).ready(function () {
   max-height: 500px;
   min-height: 44px;
   overflow-y: auto;
-  background: white;
   border: 1px solid #ddd;
   border-radius: 4px;
 }
@@ -271,7 +249,7 @@ $(document).ready(function () {
 <div class="navbar navbar-default  navbar-fixed-top" role="navigation">
   <div class="container">
     <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-bs-toggle="collapse" data-target="#navbar" data-bs-target="#navbar">
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
@@ -280,38 +258,11 @@ $(document).ready(function () {
     </div>
     <div id="navbar" class="navbar-collapse collapse">
       <ul class="nav navbar-nav">
-        <li class="dropdown">
-  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
-    Setup
-     
-    <span class="caret"></span>
-  </a>
-  <ul class="dropdown-menu" role="menu">
-    <li>
-      <a href="00-setup-R.html">Setup-R</a>
-    </li>
-    <li>
-      <a href="00-setup-rstan.html">Setup-Rstan</a>
-    </li>
-  </ul>
-</li>
-<li class="dropdown">
-  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
-    Tutorials
-     
-    <span class="caret"></span>
-  </a>
-  <ul class="dropdown-menu" role="menu">
-    <li>
-      <a href="01-A-R-intro.html">Intro-R</a>
-    </li>
-    <li>
-      <a href="01-B-Rmarkdown-intro.html">Intro-Rmarkdown</a>
-    </li>
-  </ul>
+        <li>
+  <a href="teaching.html">Teaching</a>
 </li>
 <li>
-  <a href="02-Research.html">Research</a>
+  <a href="research.html">Research</a>
 </li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
@@ -321,7 +272,7 @@ $(document).ready(function () {
   </div><!--/.container -->
 </div><!--/.navbar -->
 
-<div class="fluid-row" id="header">
+<div id="header">
 
 
 
@@ -333,20 +284,39 @@ $(document).ready(function () {
 <div id="key-points" class="section level3">
 <h3>Key Points</h3>
 <ul>
-<li>R markdown is text-based formatting that allows you to embed code and explanatory text in the same document.</li>
+<li>R markdown is text-based formatting that allows you to embed code
+and explanatory text in the same document.</li>
 <li>R markdown documents consist of a header, code chunks and text.</li>
-<li>R markdown files (.Rmd) can be rendered to other document formats (e.g. html, pdf, docx) to generate reports or web applications.</li>
-<li>Formatting analyses in R markdown keeps the entire research process in one document that can easily regenerate reports and output if the data are changed.</li>
+<li>R markdown files (.Rmd) can be rendered to other document formats
+(e.g. html, pdf, docx) to generate reports or web applications.</li>
+<li>Formatting analyses in R markdown keeps the entire research process
+in one document that can easily regenerate reports and output if the
+data are changed.</li>
 </ul>
 <blockquote>
 <p><strong>Suggested Reading:</strong></p>
-<p>Grolemund, G. 2014. <em>Introduction to R Markdown</em>. RStudio. <a href="http://rmarkdown.rstudio.com/articles_intro.html" class="uri">http://rmarkdown.rstudio.com/articles_intro.html</a></p>
+<p>Grolemund, G. 2014. <em>Introduction to R Markdown</em>. RStudio. <a
+href="http://rmarkdown.rstudio.com/articles_intro.html"
+class="uri">http://rmarkdown.rstudio.com/articles_intro.html</a></p>
 </blockquote>
 </div>
 <div id="how-we-will-use-r-markdown" class="section level3">
 <h3>How we will use R markdown</h3>
-<p>Our course website is a set of R markdown files that have been rendered to html files and are hosted on <a href="https://pages.github.com/">GitHub Pages</a>. You can find all of the pages that comprise this website in <a href="https://github.com/elahi/elahi.github.io">this GitHub repository</a>, and a similar one for our course website specifically (<a href="https://github.com/elahi/xxx" class="uri">https://github.com/elahi/xxx</a>, where xxx is specific to our course). The main landing page is found in the file <code>index.html</code> which has been generated from the file <code>index.Rmd</code>.</p>
-<p>You will learn a bit of Rmarkdown, so that you can create a fully reproducible document as part of (some of) your lab assignments. Basically, this means integrating data analysis within a readable text document, like so:</p>
+<p>Our course website is a set of R markdown files that have been
+rendered to html files and are hosted on <a
+href="https://pages.github.com/">GitHub Pages</a>. You can find all of
+the pages that comprise this website in <a
+href="https://github.com/elahi/elahi.github.io">this GitHub
+repository</a>, and a similar one for our course website specifically
+(<a href="https://github.com/elahi/xxx"
+class="uri">https://github.com/elahi/xxx</a>, where xxx is specific to
+our course). The main landing page is found in the file
+<code>index.html</code> which has been generated from the file
+<code>index.Rmd</code>.</p>
+<p>You will learn a bit of Rmarkdown, so that you can create a fully
+reproducible document as part of (some of) your lab assignments.
+Basically, this means integrating data analysis within a readable text
+document, like so:</p>
 <pre class="r"><code>set.seed(121)
 x &lt;- seq(1, 100, by = 2)
 m &lt;- 0.5
@@ -355,13 +325,38 @@ z &lt;- m * x + b
 y &lt;- z + rnorm(50, mean = 0, sd = 10)
 plot(y ~ x)</code></pre>
 <p><img src="images/01-B/unnamed-chunk-2-1.png" width="672" /></p>
-<p>I am requiring you to interact with the course material in this way because being able to document reproducible analyses is a valuable skill that is becoming nearly required for today’s scientists. As analyses become more complex and specialized, code review, in addition to open access to data, is likely to become a regular aspect of formal and informal scientific review. Documenting your analyses in R markdown with RStudio is a (relatively) painless way to ensure that you (and your reviewers) understand how you obtained and analyzed your data even after months of putting a project “on the back burner”. Therefore, we hope that you will find this additional class requirement useful even as it introduces a bit more cognitive burden.</p>
+<p>I am requiring you to interact with the course material in this way
+because being able to document reproducible analyses is a valuable skill
+that is becoming nearly required for today’s scientists. As analyses
+become more complex and specialized, code review, in addition to open
+access to data, is likely to become a regular aspect of formal and
+informal scientific review. Documenting your analyses in R markdown with
+RStudio is a (relatively) painless way to ensure that you (and your
+reviewers) understand how you obtained and analyzed your data even after
+months of putting a project “on the back burner”. Therefore, we hope
+that you will find this additional class requirement useful even as it
+introduces a bit more cognitive burden.</p>
 <div id="downloading-files-from-github" class="section level4">
 <h4>Downloading files from GitHub</h4>
-<p>Go to the <a href="https://github.com/elahi/elahi.github.io">course website GitHub repository</a>. Notice that you can choose to download all of the files as a zip file by clicking the green “Clone or download” button in the upper right. You will only need to edit one (or a few) pages, so let’s just download one file rather than the whole website. Click on the R markdown file corresponding to this html webpage: <code>https://github.com/elahi/elahi.github.io/blob/master/01-B-Rmarkdown-intro.Rmd</code>, then click the ‘Raw’ button that appears at the top right corner of the document viewer on the page that loads. This will take you to a page that displays the text in the file. Download the page as a .Rmd file (remove the .txt extension that your browser will attempt to append) and save it somewhere useful on your computer (e.g. the folder you have made for this class, not Downloads or Desktop). Find the file on your computer and open it. It should open in RStudio.</p>
+<p>Go to the <a href="https://github.com/elahi/elahi.github.io">course
+website GitHub repository</a>. Notice that you can choose to download
+all of the files as a zip file by clicking the green “Clone or download”
+button in the upper right. You will only need to edit one (or a few)
+pages, so let’s just download one file rather than the whole website.
+Click on the R markdown file corresponding to this html webpage:
+<code>https://github.com/elahi/elahi.github.io/blob/master/01-B-Rmarkdown-intro.Rmd</code>,
+then click the ‘Raw’ button that appears at the top right corner of the
+document viewer on the page that loads. This will take you to a page
+that displays the text in the file. Download the page as a .Rmd file
+(remove the .txt extension that your browser will attempt to append) and
+save it somewhere useful on your computer (e.g. the folder you have made
+for this class, not Downloads or Desktop). Find the file on your
+computer and open it. It should open in RStudio.</p>
 <blockquote>
 <p><strong>Exercise:</strong></p>
-<p>Compare the contents of the .Rmd file to what you see on the website: <a href="https://elahi.github.io/01-B-Rmarkdown-intro.html" class="uri">https://elahi.github.io/01-B-Rmarkdown-intro.html</a></p>
+<p>Compare the contents of the .Rmd file to what you see on the website:
+<a href="https://elahi.github.io/01-B-Rmarkdown-intro.html"
+class="uri">https://elahi.github.io/01-B-Rmarkdown-intro.html</a></p>
 <ul>
 <li>What is the same?</li>
 <li>What is different?</li>
@@ -379,20 +374,35 @@ plot(y ~ x)</code></pre>
 </ol>
 <blockquote>
 <p><strong>Exercise:</strong></p>
-<p>Find each of these three pieces in the .Rmd file for this webpage.</p>
+<p>Find each of these three pieces in the .Rmd file for this
+webpage.</p>
 </blockquote>
-<p>Check out the following resources for generating your own markdown documents from scratch and want to learn more about how to change the format of the output document:</p>
+<p>Check out the following resources for generating your own markdown
+documents from scratch and want to learn more about how to change the
+format of the output document:</p>
 <ul>
-<li><a href="http://rmarkdown.rstudio.com/lesson-1.html">RStudio’s lessons on using R markdown</a></li>
-<li><a href="https://www.rstudio.com/wp-content/uploads/2015/03/rmarkdown-reference.pdf">Reference guide</a></li>
-<li>Busy, but printable <a href="https://www.rstudio.com/wp-content/uploads/2016/03/rmarkdown-cheatsheet-2.0.pdf">cheatsheet</a></li>
+<li><a href="http://rmarkdown.rstudio.com/lesson-1.html">RStudio’s
+lessons on using R markdown</a></li>
+<li><a
+href="https://www.rstudio.com/wp-content/uploads/2015/03/rmarkdown-reference.pdf">Reference
+guide</a></li>
+<li>Busy, but printable <a
+href="https://www.rstudio.com/wp-content/uploads/2016/03/rmarkdown-cheatsheet-2.0.pdf">cheatsheet</a></li>
 </ul>
 <div id="markdown-style-text" class="section level4">
 <h4>Markdown-style text</h4>
-<p>Markdown is a basic and readable way to format text that is used by many web platforms because it enables to easily make web-based content without writing html. Most importantly- it is a way to encode formatting directly into the text, which can then be interpretted into multiple different document formats. Markdown keeps documents text-based so that files are readable by both humans and machines.</p>
-<p>Here’s <a href="https://guides.github.com/features/mastering-markdown/">a quick lesson</a> on markdown from GitHub.</p>
+<p>Markdown is a basic and readable way to format text that is used by
+many web platforms because it enables to easily make web-based content
+without writing html. Most importantly- it is a way to encode formatting
+directly into the text, which can then be interpretted into multiple
+different document formats. Markdown keeps documents text-based so that
+files are readable by both humans and machines.</p>
+<p>Here’s <a
+href="https://guides.github.com/features/mastering-markdown/">a quick
+lesson</a> on markdown from GitHub.</p>
 <blockquote>
-<p><strong>Exercise:</strong> Look at the Introduction to R lesson .Rmd file and find examples of the following formatting:</p>
+<p><strong>Exercise:</strong> Look at the Introduction to R lesson .Rmd
+file and find examples of the following formatting:</p>
 <ul>
 <li>a header (what controls the size of the header?)</li>
 <li>bold text and italic text</li>
@@ -402,59 +412,139 @@ plot(y ~ x)</code></pre>
 <li>text formatted as code that is not evaluated (verbatim code)</li>
 </ul>
 </blockquote>
-<p>R markdown also allows you to type latex-style mathematical formulas using <code>$ $</code> for inline text and <code>$$  $$</code> for for equations centered on their own lines. For example: <code>$$ E(X) = \sum_{i=1}^N x_i*p(x_i)$$</code> would display as: <span class="math display">\[ E(X) = \sum_{i=1}^N x_i*p(x_i)\]</span></p>
+<p>R markdown also allows you to type latex-style mathematical formulas
+using <code>$ $</code> for inline text and <code>$$  $$</code> for for
+equations centered on their own lines. For example:
+<code>$$ E(X) = \sum_{i=1}^N x_i*p(x_i)$$</code> would display as: <span
+class="math display">\[ E(X) = \sum_{i=1}^N x_i*p(x_i)\]</span></p>
 </div>
 <div id="code-chunks" class="section level4">
 <h4>Code chunks</h4>
-<p>Code chunks perform the analysis. Code chunks begin with <code>```{}</code> and end with <code>```</code>. Any text inside the <code>{}</code> at the beginning of the chunk tells R how to evaluate and display the results of the code. Since we will be using R to evaluate our code, all of our code chunks will begin with: <code>```{r}</code>. You can name code chunks (to keep track of parts of an analysis) by typing a word after the <code>r</code>: <code>```{r chunk-name}</code> Any text that you place between the beginning and ending tags of a code chunk will be treated as plain R code. Code chunks are evaluated sequentially, so any objects that you create in a chunk will be available to the chunks that follow it.</p>
-<p>You can also evaluate R code within a paragraph of text (e.g. inline code). For example, suppose you know that you weigh 142 lbs, but want to report it in kg. If you had done the calculation in a code chunk:</p>
+<p>Code chunks perform the analysis. Code chunks begin with
+<code>```{}</code> and end with <code>```</code>. Any text inside the
+<code>{}</code> at the beginning of the chunk tells R how to evaluate
+and display the results of the code. Since we will be using R to
+evaluate our code, all of our code chunks will begin with:
+<code>```{r}</code>. You can name code chunks (to keep track of parts of
+an analysis) by typing a word after the <code>r</code>:
+<code>```{r chunk-name}</code> Any text that you place between the
+beginning and ending tags of a code chunk will be treated as plain R
+code. Code chunks are evaluated sequentially, so any objects that you
+create in a chunk will be available to the chunks that follow it.</p>
+<p>You can also evaluate R code within a paragraph of text (e.g. inline
+code). For example, suppose you know that you weigh 142 lbs, but want to
+report it in kg. If you had done the calculation in a code chunk:</p>
 <pre class="r"><code>my_lbs &lt;- 142
 my_kg &lt;- my_lbs * 0.45359237</code></pre>
-<p>You could write: I weigh <code>`r my_kg`</code> kg. Which would display: I weigh 64.4101165 kg. Or, for better formatting: I weigh <code>`r round(my_kg, 1)`</code> kg. (Displays: I weigh 64.4 kg.) If you hadn’t done the calculation in a code chunk you can also do calculation in the line: I weigh <code>`r round(142*0.453, 1)`</code> kg.</p>
+<p>You could write: I weigh <code>`r my_kg`</code> kg. Which would
+display: I weigh 64.4101165 kg. Or, for better formatting: I weigh
+<code>`r round(my_kg, 1)`</code> kg. (Displays: I weigh 64.4 kg.) If you
+hadn’t done the calculation in a code chunk you can also do calculation
+in the line: I weigh <code>`r round(142*0.453, 1)`</code> kg.</p>
 </div>
 </div>
 <div id="conducting-analyses-in-rmd" class="section level3">
 <h3>Conducting analyses in Rmd</h3>
-<p>You can treat R markdown files (almost) just like a regular R script. Any text that you highlight or line that you place your cursor on can be run by pressing Ctr+Enter or Cmd+Enter. You can also run an entire code chunk by pressing the green arrow that appears to the right of it.</p>
-<p>If you click the ‘Run’ button at the top of the document you can choose to run all code chunks in the document (or just those above or below your cursor).</p>
+<p>You can treat R markdown files (almost) just like a regular R script.
+Any text that you highlight or line that you place your cursor on can be
+run by pressing Ctr+Enter or Cmd+Enter. You can also run an entire code
+chunk by pressing the green arrow that appears to the right of it.</p>
+<p>If you click the ‘Run’ button at the top of the document you can
+choose to run all code chunks in the document (or just those above or
+below your cursor).</p>
 <blockquote>
 <p><strong>Exercise:</strong></p>
-<p>Run a line of code in your Rmd file. What happens in the Console window? What happens in the Environment window?</p>
+<p>Run a line of code in your Rmd file. What happens in the Console
+window? What happens in the Environment window?</p>
 <p>Now try running a line of text from this document. What happens?</p>
-<p>What happens when you use the ‘Run’ button to run all code chunks in the document?</p>
+<p>What happens when you use the ‘Run’ button to run all code chunks in
+the document?</p>
 </blockquote>
 </div>
 <div id="rendering-rmd-to-html" class="section level3">
 <h3>Rendering Rmd to html</h3>
-<p>When you are finished with an analysis (or even if you are only part-way through) you can convert your Rmd file to another file format to generate a report. This process is called <em>rendering</em> and we will be rendering all of our Rmd files to html so that they can display as webpages on our course website. For your project, you may want to render your analysis to a slide show (beamer) or pdf or word document.</p>
-<p>Documents written in R markdown are rendered to other document formats by the <code>rmarkdown</code> package that comes automatically installed with RStudio. The rmarkdown package renders documents using two steps: First, it excutes all of the code using functions from the <code>knitr</code> package. Then, it converts the output of the code and any markdown-formatted text to a new document format using functions in the <code>pandoc</code> package. Note that any output that you generate in the code chunks (e.g. plots, exported data) will be saved relative to the working directory, unless you specify otherwise in a code chunk option.</p>
-<p>To render an Rmd document in Rstudio, click the ‘Knit’ button at the top of the window displaying the document. If everything goes right a new window should pop up showing the new file that was generated (or prompt you to open the file in a browser window). The file will be saved in the directory where the Rmd file is located.</p>
+<p>When you are finished with an analysis (or even if you are only
+part-way through) you can convert your Rmd file to another file format
+to generate a report. This process is called <em>rendering</em> and we
+will be rendering all of our Rmd files to html so that they can display
+as webpages on our course website. For your project, you may want to
+render your analysis to a slide show (beamer) or pdf or word
+document.</p>
+<p>Documents written in R markdown are rendered to other document
+formats by the <code>rmarkdown</code> package that comes automatically
+installed with RStudio. The rmarkdown package renders documents using
+two steps: First, it excutes all of the code using functions from the
+<code>knitr</code> package. Then, it converts the output of the code and
+any markdown-formatted text to a new document format using functions in
+the <code>pandoc</code> package. Note that any output that you generate
+in the code chunks (e.g. plots, exported data) will be saved relative to
+the working directory, unless you specify otherwise in a code chunk
+option.</p>
+<p>To render an Rmd document in Rstudio, click the ‘Knit’ button at the
+top of the window displaying the document. If everything goes right a
+new window should pop up showing the new file that was generated (or
+prompt you to open the file in a browser window). The file will be saved
+in the directory where the Rmd file is located.</p>
 <blockquote>
 <p><strong>Exercise:</strong></p>
 <ol style="list-style-type: decimal">
-<li>Render your practice Rmd file to an html file in RStudio by clicking the Knit button.</li>
-<li>Use your file browser to locate the html file that was generated. Open it with your browser- what do you see? How does it differ from what is displayed on this website?</li>
-<li>Now open the html file with a text editor (emacs, notepad). What do you see?</li>
+<li>Render your practice Rmd file to an html file in RStudio by clicking
+the Knit button.</li>
+<li>Use your file browser to locate the html file that was generated.
+Open it with your browser- what do you see? How does it differ from what
+is displayed on this website?</li>
+<li>Now open the html file with a text editor (emacs, notepad). What do
+you see?</li>
 </ol>
 </blockquote>
 <div id="code-chunk-options" class="section level4">
 <h4>Code chunk options</h4>
-<p>The way that pandoc displays the contents and output of code chunks is determined by the <em>options</em> that you set. These can be set for all code chunks in the document (<em>global</em> options) or for each chunk individually.</p>
-<p>This <a href="https://www.rstudio.com/wp-content/uploads/2015/03/rmarkdown-reference.pdf">reference guide</a> has a good overview of what the different options will do.</p>
-<p>Look at the first code chunk in the example lesson Rmd document where the global options are set. This code block demonstrates 3 global options that apply to all following code chunks in the document: <code>knitr::opts_chunk$set()</code>. It also shows how you would apply an options to a single code chunk in the brackets at the start of the chunk: <code>{r include = FALSE}</code>, so that this chunk is not shown in the resulting html document, even though it is evaluated.</p>
+<p>The way that pandoc displays the contents and output of code chunks
+is determined by the <em>options</em> that you set. These can be set for
+all code chunks in the document (<em>global</em> options) or for each
+chunk individually.</p>
+<p>This <a
+href="https://www.rstudio.com/wp-content/uploads/2015/03/rmarkdown-reference.pdf">reference
+guide</a> has a good overview of what the different options will do.</p>
+<p>Look at the first code chunk in the example lesson Rmd document where
+the global options are set. This code block demonstrates 3 global
+options that apply to all following code chunks in the document:
+<code>knitr::opts_chunk$set()</code>. It also shows how you would apply
+an options to a single code chunk in the brackets at the start of the
+chunk: <code>{r include = FALSE}</code>, so that this chunk is not shown
+in the resulting html document, even though it is evaluated.</p>
 <blockquote>
 <p><strong>Exercise:</strong></p>
-<p>What other chunk options do you see in the example lesson Rmd file? What do they do? (Hint: You can figure it out by removing them and rendering the document.)</p>
+<p>What other chunk options do you see in the example lesson Rmd file?
+What do they do? (Hint: You can figure it out by removing them and
+rendering the document.)</p>
 </blockquote>
 </div>
 <div id="figures" class="section level4">
 <h4>Figures</h4>
-<p>Any figure that you make in a code chunk will by default be saved as separate files in your working directory and then imported into the final document created by <code>pandoc</code>. For these webpages, the first code chunk specifies: <code>knitr::opts_chunk$set(fig.path = "images/")</code>, which tells <code>knitr</code> that it should save any figures generated with code chunks to a folder named “images” within the working directory. The image files will be named according to the name of the code chunk from which they are generated. Hence, it is a good idea to separate analyses into separate code chunks and give them somewhat descriptive names. R markdown can also automatically number and caption your figures and tables. The <a href="https://cran.r-project.org/web/packages/captioner/vignettes/using_captioner.html"><code>captioner</code></a> package is particularly useful for this.</p>
+<p>Any figure that you make in a code chunk will by default be saved as
+separate files in your working directory and then imported into the
+final document created by <code>pandoc</code>. For these webpages, the
+first code chunk specifies:
+<code>knitr::opts_chunk$set(fig.path = "images/")</code>, which tells
+<code>knitr</code> that it should save any figures generated with code
+chunks to a folder named “images” within the working directory. The
+image files will be named according to the name of the code chunk from
+which they are generated. Hence, it is a good idea to separate analyses
+into separate code chunks and give them somewhat descriptive names. R
+markdown can also automatically number and caption your figures and
+tables. The <a
+href="https://cran.r-project.org/web/packages/captioner/vignettes/using_captioner.html"><code>captioner</code></a>
+package is particularly useful for this.</p>
 <blockquote>
 <p><strong>Exercise:</strong></p>
 <ol style="list-style-type: decimal">
-<li>Add a new section to the example lesson Rmd document with markdown-formatted text and a new R code chunk. Render the document again.</li>
-<li>Open the html file with your web browser to see what your changes would look like online. How does what you see differ from what is shown on this website?</li>
+<li>Add a new section to the example lesson Rmd document with
+markdown-formatted text and a new R code chunk. Render the document
+again.</li>
+<li>Open the html file with your web browser to see what your changes
+would look like online. How does what you see differ from what is shown
+on this website?</li>
 </ol>
 </blockquote>
 </div>
@@ -469,7 +559,7 @@ my_kg &lt;- my_lbs * 0.45359237</code></pre>
 
 // add bootstrap table styles to pandoc tables
 function bootstrapStylePandocTables() {
-  $('tr.header').parent('thead').parent('table').addClass('table table-condensed');
+  $('tr.odd').parent('tbody').parent('table').addClass('table table-condensed');
 }
 $(document).ready(function () {
   bootstrapStylePandocTables();
@@ -487,7 +577,7 @@ $(document).ready(function () {
 
 $(document).ready(function () {
   $('.tabset-dropdown > .nav-tabs > li').click(function () {
-    $(this).parent().toggleClass('nav-tabs-open')
+    $(this).parent().toggleClass('nav-tabs-open');
   });
 });
 </script>

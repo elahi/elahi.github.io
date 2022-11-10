@@ -11,7 +11,7 @@
 
 
 
-<title>Setup - RStan</title>
+<title>Research</title>
 
 <script src="site_libs/header-attrs-2.16/header-attrs.js"></script>
 <script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
@@ -276,65 +276,133 @@ $(document).ready(function () {
 
 
 
-<h1 class="title toc-ignore">Setup - RStan</h1>
+<h1 class="title toc-ignore">Research</h1>
 
 </div>
 
 
-<div id="installing-stan-and-rstan" class="section level2">
-<h2>Installing Stan and RStan</h2>
-<p>These instructions are from: <a
-href="https://github.com/rmcelreath/rethinking"
-class="uri">https://github.com/rmcelreath/rethinking</a></p>
-<p>Go to <code>http://mc-stan.org</code> and follow the instructions for
-your platform. The biggest challenge is getting a C++ compiler
-configured to work with your installation of R. The instructions at the
+<p>In general, I study patterns of spatial and temporal change in marine
+ecosystems. Recent projects include:</p>
+<ul>
+<li><p>examining the consequences of fisheries closures on fisher
+behavior</p></li>
+<li><p>understanding why some coral reefs fare better than their
+neighbors</p></li>
+<li><p>biodiversity and body size change in coastal ecosystems,
+particularly in the context of recent human impacts</p></li>
+</ul>
+<p>My current projects are in collaboration with undergraduate students,
+and with the students in my classes. Below are some links to the public
+repositories with data, images, and videos from recent efforts:</p>
+<ul>
+<li><p><a href="https://purl.stanford.edu/wp446bg1851">Kelp forests of
+the Monterey Peninsula</a></p></li>
+<li><p><a href="https://purl.stanford.edu/pz371sk3632">Times series data
+from the HMS kelp forest ecology course</a></p></li>
+<li><p><a href="https://purl.stanford.edu/kv041ng6595">Rocky intertidal
+photographic surveys</a></p></li>
+</ul>
+<div id="selected-publications" class="section level3">
+<h3>Selected publications</h3>
+<p>If you would like a pdf of any of my publications, please contact me
+- elahi at stanford dot edu.</p>
+<p><strong>Elahi, R.</strong>, Edmunds, P.J., Gates, R.D., Kuffner,
+I.B., Barnes, B.B., Chollett, I., Courtney, T.A., Guest, J.R., Lenz,
+E.A., Toth, L.T., Viehman, T.S., Williams, I.D. 2022. <em>Scale
+dependence of coral reef oases and their environmental correlates.</em>
 <a
-href="https://github.com/stan-dev/rstan/wiki/RStan-Getting-Started">RStan
-getting started website</a> are quite thorough.</p>
-<p>Installing Stan can be a bit complicated on some machines, especially
-if you haven’t run programs that require a C++ compiler before (if that
-sentence doesn’t make sense to you, this means you), so please don’t
-wait until the morning of class to install Stan. Try to install it a few
-days beforehand, and if you can’t get it to work let me know and I’ll
-try to help.</p>
-<p>To check that it works, once you’ve successfully done all the other
-steps please open R and run the code below. If it works, you’re good to
-go!</p>
-<pre class="r"><code>library(rstan)
-stanmodelcode &lt;- &quot;
-data {
-  int&lt;lower=0&gt; N;
-  real y[N];
-} 
-
-parameters {
-  real mu;
-} 
-
-model {
-  target += normal_lpdf(mu | 0, 10);
-  target += normal_lpdf(y  | mu, 1);
-} 
-&quot;
-
-y &lt;- rnorm(20) 
-dat &lt;- list(N = 20, y = y); 
-fit &lt;- stan(model_code = stanmodelcode, model_name = &quot;example&quot;, 
-            data = dat, iter = 2012, chains = 3, sample_file = &#39;norm.csv&#39;,
-            verbose = TRUE) 
-print(fit)
-traceplot(fit)</code></pre>
-<div id="installing-rethinking" class="section level3">
-<h3>Installing <code>rethinking</code></h3>
-<p>Then you can install <code>rethinking</code> from within R using:</p>
-<pre class="r"><code>install.packages(c(&quot;coda&quot;,&quot;mvtnorm&quot;,&quot;devtools&quot;,&quot;loo&quot;,&quot;dagitty&quot;))
-library(devtools)
-devtools::install_github(&quot;rmcelreath/rethinking&quot;)</code></pre>
-<p>More details on <code>rethinking</code> and other packages by Richard
-McElreath:<br />
-<a href="https://xcelab.net/rm/software/"
-class="uri">https://xcelab.net/rm/software/</a></p>
+href="https://esajournals.onlinelibrary.wiley.com/doi/full/10.1002/eap.2651">Ecological
+Applications 32: e2651</a></p>
+<ul>
+<li><a href="https://purl.stanford.edu/zb133qp4049">Data and
+code</a></li>
+</ul>
+<p><strong>Elahi, R.</strong>, Miller, L.P., and S.Y. Litvin. 2020.
+<em>Historical comparisons of body size are sensitive to data
+availability and ecological context.</em> <a
+href="https://doi.org/10.1002/ecy.3101">Ecology 101:e03101</a></p>
+<ul>
+<li><a href="https://purl.stanford.edu/bs528mw1630">Data and
+code</a></li>
+</ul>
+<p>Micheli, F., Carlton, J., Pearse, J., Selgrath, J., <strong>Elahi,
+R.</strong>, Watanabe, J., Mach, M.E., McDevitt-Irwin, J., Pearse, V.,
+Burnett, N., and C. Baxter. 2020. <em>Field stations as sentinels of
+change.</em> <a href="https://doi.org/10.1002/fee.2231">Frontiers in
+Ecology and the Environment 18:320-322</a></p>
+<p><strong>Elahi, R.</strong>, Ferretti, F., Bastari, A., Cerrano, C.,
+Colloca, F., Kowalik, J., Ruckelshaus, M., Struck, A. and F. Micheli.
+2018. <em>Leveraging vessel traffic data and a temporary fishing closure
+to inform marine management.</em> <a
+href="https://doi.org/10.1002/fee.1936">Frontiers in Ecology and
+Environment 16:440-446</a></p>
+<ul>
+<li><a href="https://purl.stanford.edu/hj240pg7057">Data and
+code</a></li>
+</ul>
+<p>Guest, J.R., Edmunds, P.J., Gates, R.D., Kuffner, I.B., Andersonn,
+A.J., Barnes, B.B., Chollett, I., Courtney, T.A., <strong>Elahi,
+R.</strong>, Gross, K., Lenz, E.A., Mitarai, S., Mumby, P.J., Nelson,
+H.R., Parker, B.A., Putnam, H.M., Rogers, C.S. and L.T. Toth. 2018.
+<em>A framework for identifying and characterising coral reef “oases”
+against a backdrop of degradation.</em> <a
+href="https://doi.org/10.1111/1365-2664.13179">Journal of Applied
+Ecology 55: 2865-2875</a></p>
+<ul>
+<li><a href="https://github.com/elahi/coral_sims">Simulations of coral
+cover (e.g., Figure 1)</a></li>
+</ul>
+<p>O’Leary, J., Micheli, F., Airoldi L., Boch C., De Leo, G.,
+<strong>Elahi, R.</strong>, Ferretti, F., Graham, N.A.J., Litvin, S.Y.,
+Low, N.H., Lummis, S., Nickols, K.J. and J. Wong. 2017. <em>Resilience
+of marine ecosystems to climatic disturbances.</em> <a
+href="https://doi.org/10.1093/biosci/biw161">BioScience 67:
+208-220</a></p>
+<ul>
+<li><a href="https://github.com/elahi/bright_spots">Data and code for
+Figures 3 and 4</a></li>
+</ul>
+<p><strong>Elahi, R.</strong>, Sebens, K.P. and G.A. De Leo. 2016.
+<em>Ocean warming and the demography of declines in coral body
+size.</em> <a href="https://doi.org/10.3354/meps11931">Marine Ecology
+Progress Series 560: 147-158</a></p>
+<p><strong>Elahi, R.</strong>, O’Connor, M.I., Byrnes, J.E.K., Dunic,
+J., Eriksson, B.K., Hensel, M.J.S. and P.J. Kearns. 2015. <em>Recent
+trends in local-scale marine biodiversity reflect community structure
+and human impacts.</em> <a
+href="https://doi.org/10.1016/j.cub.2015.05.030">Current Biology
+25:1938-1943</a></p>
+<ul>
+<li><a href="https://github.com/elahi/marBiodivChange">Data and
+code</a></li>
+</ul>
+<p><strong>Elahi, R.</strong>, Birkeland, C., Sebens, K.P, Turner, K.R.
+and T.R. Dwyer. 2013. <em>Limited change in the diversity and structure
+of subtidal communites over four decades.</em> <a
+href="https://doi.org/10.1007/s00227-013-2308-3">Marine Biology
+160:3209-3219</a></p>
+<ul>
+<li><a href="https://github.com/elahi/phd_elahi">Data from
+dissertation</a></li>
+</ul>
+<p><strong>Elahi, R</strong>. and K.P. Sebens. 2012. <em>Consumers
+mediate natural variation between prey richness and resource use in a
+benthic marine community.</em> <a
+href="https://doi.org/10.3354/meps09603">Marine Ecology Progress Series
+452:131-143</a></p>
+<p>Edmunds, P.J. and <strong>R. Elahi.</strong> 2007. <em>The
+demographics of a 15-year decline in cover of the Caribbean reef coral
+Montastraea annularis.</em> <a
+href="https://doi.org/10.1890/05-1081">Ecological Monographs
+77:3-18</a></p>
+<p><strong>Elahi, R.</strong> and P.J. Edmunds. 2007. <em>Consequences
+of fission in the coral Siderastrea siderea: growth rates of small
+colonies and clonal input to population structure.</em> <a
+href="https://doi.org/10.1007/s00338-006-0190-x">Coral Reefs
+26:271-276</a></p>
+<div class="figure">
+<img src="images/P1010170_crop.png" style="width:7.38in" alt="" />
+<p class="caption">San Juan Islands and Mt. Baker, Washington</p>
 </div>
 </div>
 

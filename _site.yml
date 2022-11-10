@@ -10,19 +10,19 @@ output:
 navbar:
   title: "Home"
   left:
-    #- text: "Courses"
-    #  href: courses.html
-    - text: "Setup"
-      menu:
-        - text: "Setup-R"
-          href: 00-setup-R.html
-        - text: "Setup-Rstan"
-          href: 00-setup-rstan.html
-    - text: "Tutorials"
-      menu:
-        - text: "Intro-R"
-          href: 01-A-R-intro.html
-        - text: "Intro-Rmarkdown"
-          href: 01-B-Rmarkdown-intro.html
+    - text: "Teaching"
+      href: teaching.html
     - text: "Research"
-      href: 02-Research.html
+      href: research.html
+    # - text: "Setup"
+    #   menu:
+    #     - text: "Setup-R"
+    #       href: 00-setup-R.html
+    #     - text: "Setup-Rstan"
+    #       href: 00-setup-rstan.html
+    # - text: "Tutorials"
+    #   menu:
+    #     - text: "Intro-R"
+    #       href: 01-A-R-intro.html
+    #     - text: "Intro-Rmarkdown"
+    #       href: 01-B-Rmarkdown-intro.html
