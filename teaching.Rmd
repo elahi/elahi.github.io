@@ -30,7 +30,7 @@ UG reqs: WAY-SMA
 
 ### Statistical Modeling (BIOHOPK 140H, BIOHOPK 240H, OCEANS 140, OCEANS 240)
 
-Introduction to applied statistical modeling in a Bayesian framework. Topics will include probability, regression, model comparison, and hierarchical modeling. We will take a hands-on, computational approach (R, Stan) to gain intuition so that students can later design their own inferential models. Prerequisites for this course include introductory statistics and some calculus or linear algebra, as well as previous exposure to scientific computing. Open to graduate students; undergraduate students may enroll with consent of instructor.
+Introduction to applied statistical modeling in a Bayesian framework. Topics will include probability, regression, model comparison, and hierarchical modeling. We will take a hands-on, computational approach (R, Stan) to gain intuition so that students can later design their own inferential models. Prerequisites for this course include introductory statistics and scientific computing with R. Open to graduate students; undergraduate students may enroll with consent of instructor.
 
 Term: Winter\
 Units: 3

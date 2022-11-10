@@ -1,2 +1,2 @@
 # elahi.github.io
-Robin Elahi's teaching pages
+Robin Elahi's website
