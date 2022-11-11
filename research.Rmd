@@ -25,19 +25,19 @@ In general, I study patterns of spatial and temporal change in marine ecosystems
 
 -   biodiversity and body size change in coastal ecosystems, particularly in the context of recent human impacts
 
-My current projects are in collaboration with undergraduate students, and with the students in my classes. Below are some links to the public repositories with data, images, and videos from recent efforts:
-
--   [Kelp forests of the Monterey Peninsula](https://purl.stanford.edu/wp446bg1851)
-
--   [Times series data from the HMS kelp forest ecology course](https://purl.stanford.edu/pz371sk3632)
+My current projects are focused on the natural history and ecology of our local kelp forests and rocky shores, in collaboration with the students in my classes and undergraduate research interns. Below are some links to the public repositories with data, images, and videos from recent efforts:
 
 -   [Rocky intertidal photographic surveys](https://purl.stanford.edu/kv041ng6595)
+
+-   [Kelp forest video surveys](https://purl.stanford.edu/wp446bg1851)
+
+-   [Time series data from the HMS kelp forest ecology course](https://purl.stanford.edu/pz371sk3632)
 
 ### Selected publications
 
 If you would like a pdf of any of my publications, please contact me - elahi at stanford dot edu.
 
-**Elahi, R.**, Edmunds, P.J., Gates, R.D., Kuffner, I.B., Barnes, B.B., Chollett, I., Courtney, T.A., Guest, J.R., Lenz, E.A., Toth, L.T., Viehman, T.S., Williams, I.D. 2022. *Scale dependence of coral reef oases and their environmental correlates.* [Ecological Applications 32: e2651](https://esajournals.onlinelibrary.wiley.com/doi/full/10.1002/eap.2651)
+**Elahi, R.**, Edmunds, P.J., Gates, R.D., Kuffner, I.B., Barnes, B.B., Chollett, I., Courtney, T.A., Guest, J.R., Lenz, E.A., Toth, L.T., Viehman, T.S., and I.D. Williams. 2022. *Scale dependence of coral reef oases and their environmental correlates.* [Ecological Applications 32: e2651](https://esajournals.onlinelibrary.wiley.com/doi/full/10.1002/eap.2651)
 
 -   [Data and code](https://purl.stanford.edu/zb133qp4049)
 
@@ -75,4 +75,4 @@ Edmunds, P.J. and **R. Elahi.** 2007. *The demographics of a 15-year decline in 
 
 **Elahi, R.** and P.J. Edmunds. 2007. *Consequences of fission in the coral Siderastrea siderea: growth rates of small colonies and clonal input to population structure.* [Coral Reefs 26:271-276](https://doi.org/10.1007/s00338-006-0190-x)
 
-![San Juan Islands and Mt. Baker, Washington](images/P1010170_crop.png){width="7.38in"}
+![Conducting video surveys in a kelp forest (credit: Andrzejaczek)](images/re_framer_credit_Andrzejaczek.jpg)
