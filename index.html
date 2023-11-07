@@ -13,7 +13,7 @@
 
 <title>Robin Elahi, PhD</title>
 
-<script src="site_libs/header-attrs-2.16/header-attrs.js"></script>
+<script src="site_libs/header-attrs-2.24/header-attrs.js"></script>
 <script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link href="site_libs/bootstrap-3.3.5/css/cosmo.min.css" rel="stylesheet" />
@@ -187,8 +187,8 @@ $(document).ready(function () {
   border-radius: 4px;
 }
 
-.tabset-dropdown > .nav-tabs > li.active:before {
-  content: "";
+.tabset-dropdown > .nav-tabs > li.active:before, .tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "\e259";
   font-family: 'Glyphicons Halflings';
   display: inline-block;
   padding: 10px;
@@ -196,16 +196,9 @@ $(document).ready(function () {
 }
 
 .tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
-  content: "&#xe258;";
-  border: none;
-}
-
-.tabset-dropdown > .nav-tabs.nav-tabs-open:before {
-  content: "";
+  content: "\e258";
   font-family: 'Glyphicons Halflings';
-  display: inline-block;
-  padding: 10px;
-  border-right: 1px solid #ddd;
+  border: none;
 }
 
 .tabset-dropdown > .nav-tabs > li.active {
@@ -284,33 +277,26 @@ $(document).ready(function () {
 
 <p>I am a lecturer at Stanford University’s Hopkins Marine Station,
 where I teach courses in marine ecology, invertebrate zoology, and
-statistics. I also lead an NSF-funded Research Coordination Network in
-Undergraduate Biology Education <a
-href="https://dimes.stanford.edu">(https://dimes.stanford.edu)</a>
-focused on unifying curriculum across marine stations, with the goal of
-diversifying participation in marine ecology. Here’s my <a
+statistics. Here’s my <a
 href="/cv/Elahi_CV_long_221110.pdf"><strong>CV</strong></a>.</p>
 <p>A list of the courses offered at Hopkins Marine Station can be found
 here:</p>
 <p><a href="https://hopkinsmarinestation.stanford.edu/courses"
 class="uri">https://hopkinsmarinestation.stanford.edu/courses</a></p>
-<p>Applications for the undergraduate program can be found here:</p>
-<p><a
-href="https://hopkinsmarinestation.stanford.edu/undergraduate-studies/apply"
-class="uri">https://hopkinsmarinestation.stanford.edu/undergraduate-studies/apply</a></p>
-<p>A bit more info on upcoming courses can be found <a
-href="https://elahi.github.io/teaching.html">here</a>. All of my courses
-are taught in-person at Hopkins Marine Station.</p>
-<p><strong>As a lecturer, I do not take graduate students.</strong>
-Please have a look at the list of <a
+<p>A bit more info on my upcoming courses can be found <a
+href="https://elahi.github.io/teaching.html">here</a>. These courses are
+taught in-person at Hopkins Marine Station.</p>
+<p>As a lecturer, I do not take graduate students. Please have a look at
+the list of <a
 href="https://hopkinsmarinestation.stanford.edu/people/faculty">professors
 at Hopkins</a> for PhD opportunities.</p>
 <p>If you are a Stanford undergraduate student interested in doing
 ecological research at Hopkins Marine Station, please contact me.</p>
-<div class="figure">
-<img src="images/IMG_4084_sommer.JPG" alt="" />
-<p class="caption">Warming up for a dive at South Monastery (credit: F.
-Sommer)</p>
+<div class="float">
+<img src="images/IMG_4084_sommer.JPG"
+alt="Warming up for a dive at South Monastery (credit: F. Sommer)" />
+<div class="figcaption">Warming up for a dive at South Monastery
+(credit: F. Sommer)</div>
 </div>
 <div id="contact" class="section level3">
 <h3>Contact</h3>

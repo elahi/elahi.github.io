@@ -13,7 +13,7 @@
 
 <title>Research</title>
 
-<script src="site_libs/header-attrs-2.16/header-attrs.js"></script>
+<script src="site_libs/header-attrs-2.24/header-attrs.js"></script>
 <script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link href="site_libs/bootstrap-3.3.5/css/cosmo.min.css" rel="stylesheet" />
@@ -187,8 +187,8 @@ $(document).ready(function () {
   border-radius: 4px;
 }
 
-.tabset-dropdown > .nav-tabs > li.active:before {
-  content: "";
+.tabset-dropdown > .nav-tabs > li.active:before, .tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "\e259";
   font-family: 'Glyphicons Halflings';
   display: inline-block;
   padding: 10px;
@@ -196,16 +196,9 @@ $(document).ready(function () {
 }
 
 .tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
-  content: "&#xe258;";
-  border: none;
-}
-
-.tabset-dropdown > .nav-tabs.nav-tabs-open:before {
-  content: "";
+  content: "\e258";
   font-family: 'Glyphicons Halflings';
-  display: inline-block;
-  padding: 10px;
-  border-right: 1px solid #ddd;
+  border: none;
 }
 
 .tabset-dropdown > .nav-tabs > li.active {
@@ -402,10 +395,11 @@ of fission in the coral Siderastrea siderea: growth rates of small
 colonies and clonal input to population structure.</em> <a
 href="https://doi.org/10.1007/s00338-006-0190-x">Coral Reefs
 26:271-276</a></p>
-<div class="figure">
-<img src="images/re_framer_credit_Andrzejaczek.jpg" alt="" />
-<p class="caption">Conducting video surveys in a kelp forest (credit: S.
-Andrzejaczek)</p>
+<div class="float">
+<img src="images/re_framer_credit_Andrzejaczek.jpg"
+alt="Conducting video surveys in a kelp forest (credit: S. Andrzejaczek)" />
+<div class="figcaption">Conducting video surveys in a kelp forest
+(credit: S. Andrzejaczek)</div>
 </div>
 </div>
 
