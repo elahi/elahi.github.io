@@ -33,6 +33,8 @@ UG reqs: WAY-SMA
 
 In this course we will build community, foster discussion, and develop a deeper understanding of a single topic relevant to scientific or statistical programming using R. The specific format will be chosen by participants in the course; students are empowered to take the lead in the discussion of weekly readings. Prerequisites: an introductory course in statistics and some familiarity with the R programming language. Formerly BIOHOPK 200.
 
+[Course website](https://elahi.github.io/qk2e/)
+
 Term: Winter\
 Th: 1:30-2:50\
 Units: 1\
@@ -67,17 +69,18 @@ This is an experiential field course on the ecology of giant kelp forests. Throu
 
 Term: Summer\
 Units: 3\
-UG reqs: WAY-SMA
+UG reqs: WAY-SMA\
+Co-taught with Clint Collins
 
 This is a 5-week course (15 July - 16 August, 2024). We will meet 8am-5pm, Monday-Friday. You are also expected to work on assignments outside of class. In other words, this course is a full-time commitment. What is it like to be a student in this class? You can learn about the course from a [Stanford report](https://news.stanford.edu/report/2022/08/23/underwater-scientists-investigate-kelp-forests/?utm_source=Stanford+ALL&utm_campaign=48339550ec-int_COPY_02&utm_medium=email&utm_term=0_c042b4aad7-48339550ec-55725232) and from previous students here: <https://purl.stanford.edu/km092my4610>
 
-This course is open to non-Stanford students as well as post-bac students (i.e., if you have already graduated). You will apply and register through [Stanford Summer Session ](https://summer.stanford.edu/). Students will provide, at minimum, their wetsuit, gloves, booties, hood, mask, snorkel, weight belt, and fins (we can provide a loaner BCD and regulator).
+This course is open to non-Stanford students as well as post-bac students (i.e., if you have already graduated). You will apply and register through [Stanford Summer Session](https://summer.stanford.edu/). Students will provide, at minimum, their wetsuit, gloves, booties, hood, mask, snorkel, weight belt, and fins. Please reach out loaner BCD and regulator).
 
 PRIORITY deadline: March 15 (you will be notified of admission by April 1)
 
 FINAL deadline: April 15 (you will be notified of admission by May 1)
 
-When active, the application is here: <https://hopkinsmarinestation.stanford.edu/undergraduate-studies/apply>
+[When active, the application is here](https://docs.google.com/forms/d/1JDWb2yzsXCpFFxfzuPD33hzQMrL9hHOy2og2BKQIlHs/edit)
 
 ![Students surveying a historical transect at Hopkins Marine Station](images/IMG_1322_elahi.JPG)
 
