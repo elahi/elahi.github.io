@@ -17,19 +17,15 @@ knitr::opts_chunk$set(echo = TRUE)
 repo_url <- "https://raw.githubusercontent.com/elahi/github.io/master/"
 ```
 
-I am a lecturer at Stanford University's Hopkins Marine Station, where I teach courses in marine ecology, invertebrate zoology, and statistics. Here's my [**CV**](/cv/Elahi_CV_long_221110.pdf).
+I am a lecturer at Stanford University's Hopkins Marine Station, where I teach courses in marine ecology, invertebrate zoology, and statistics. A bit more info on my upcoming courses can be found [here](https://elahi.github.io/teaching.html). These courses are taught in-person at Hopkins Marine Station and feature outdoor learning, scientific illustration, and telling stories with data. 
 
-A list of the courses offered at Hopkins Marine Station can be found here:
-
-<https://hopkinsmarinestation.stanford.edu/courses>
-
-A bit more info on my upcoming courses can be found [here](https://elahi.github.io/teaching.html). These courses are taught in-person at Hopkins Marine Station.
+Here's my [**CV**](/cv/Elahi_CV_long_221110.pdf).
 
 As a lecturer, I do not take graduate students. Please have a look at the list of [professors at Hopkins](https://hopkinsmarinestation.stanford.edu/people/faculty) for PhD opportunities.
 
-If you are a Stanford undergraduate student interested in doing ecological research at Hopkins Marine Station, please contact me. 
-
 ![Warming up for a dive at South Monastery (credit: F. Sommer)](images/IMG_4084_sommer.JPG)
+
+\
 
 ### Contact
 

@@ -17,14 +17,6 @@ knitr::opts_chunk$set(fig.path = "images/research/")
 repo_url <- "https://raw.githubusercontent.com/elahi/github.io/master/"
 ```
 
-In general, I study patterns of spatial and temporal change in marine ecosystems. Recent projects include:
-
--   examining the consequences of fisheries closures on fisher behavior
-
--   understanding why some coral reefs fare better than their neighbors
-
--   biodiversity and body size change in coastal ecosystems, particularly in the context of recent human impacts
-
 My current projects are focused on the natural history and ecology of our local kelp forests and rocky shores, in collaboration with the students in my classes and undergraduate research interns. Below are some links to the public repositories with data, images, and videos from recent efforts:
 
 -   [Rocky intertidal photographic surveys](https://purl.stanford.edu/kv041ng6595)
@@ -36,6 +28,9 @@ My current projects are focused on the natural history and ecology of our local 
 ### Selected publications
 
 If you would like a pdf of any of my publications, please contact me - elahi at stanford dot edu.
+
+Gissi, E., Goodman, M.C., **Elahi, R.**, McDevitt-Irwin, J.M., Arnoldi, N.S., Arafeh-Dalmau, N., Knight, C.J., Olguín-Jacobson, C., Palmisciano, M., Tillman, C.M. and G.A. De Leo. 2024. *Sex-specific variation in species interactions matters in ecological communities.* [Trends in Ecology and Evolution](https://www.cell.com/trends/ecology-evolution/abstract/S0169-5347(24)00171-X).
+
 
 **Elahi, R.**, Edmunds, P.J., Gates, R.D., Kuffner, I.B., Barnes, B.B., Chollett, I., Courtney, T.A., Guest, J.R., Lenz, E.A., Toth, L.T., Viehman, T.S., and I.D. Williams. 2022. *Scale dependence of coral reef oases and their environmental correlates.* [Ecological Applications 32: e2651](https://esajournals.onlinelibrary.wiley.com/doi/full/10.1002/eap.2651)
 
