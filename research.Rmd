@@ -29,7 +29,7 @@ My current projects are focused on the natural history and ecology of our local 
 
 If you would like a pdf of any of my publications, please contact me - elahi at stanford dot edu.
 
-**Elahi, R.**, Micheli, F., and J.M. Watanabe. In prep. Passing the quadrat: investigator effects and biodiversity change on a rocky shore over three to nine decades. [Manuscript draft](/docs/hewatt_ms_240923.pdf).
+**Elahi, R.**, Micheli, F., and J.M. Watanabe. In prep. Passing the quadrat: investigator effects and biodiversity change on a rocky shore over three to nine decades. 
 
 Gissi, E., Goodman, M.C., **Elahi, R.**, McDevitt-Irwin, J.M., Arnoldi, N.S., Arafeh-Dalmau, N., Knight, C.J., Olguín-Jacobson, C., Palmisciano, M., Tillman, C.M. and G.A. De Leo. 2024. *Sex-specific variation in species interactions matters in ecological communities.* [Trends in Ecology and Evolution](https://www.cell.com/trends/ecology-evolution/abstract/S0169-5347(24)00171-X).
 
@@ -73,3 +73,5 @@ Edmunds, P.J. and **R. Elahi.** 2007. *The demographics of a 15-year decline in 
 **Elahi, R.** and P.J. Edmunds. 2007. *Consequences of fission in the coral Siderastrea siderea: growth rates of small colonies and clonal input to population structure.* [Coral Reefs 26:271-276](https://doi.org/10.1007/s00338-006-0190-x)
 
 ![Conducting video surveys in a kelp forest (credit: S. Andrzejaczek)](images/re_framer_credit_Andrzejaczek.jpg)
+
+<!-- [Manuscript draft](/docs/hewatt_ms_240923.pdf). -->
