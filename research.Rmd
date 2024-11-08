@@ -29,7 +29,9 @@ My current projects are focused on the natural history and ecology of our local 
 
 If you would like a pdf of any of my publications, please contact me - elahi at stanford dot edu.
 
-**Elahi, R.**, Micheli, F., and J.M. Watanabe. Submitted. Passing the quadrat: inferring biodiversity change over time and across investigators. PeerJ  
+**Elahi, R.**, Micheli, F., and J.M. Watanabe. Submitted. Passing the quadrat: inferring biodiversity change over time and across investigators. In review at PeerJ; [Biorxiv preprint](https://biorxiv.org/cgi/content/short/2024.11.05.622130v1)
+
+- [Data and code](https://purl.stanford.edu/fd733kb4905) 
 
 Gissi, E., Goodman, M.C., **Elahi, R.**, McDevitt-Irwin, J.M., Arnoldi, N.S., Arafeh-Dalmau, N., Knight, C.J., Olguín-Jacobson, C., Palmisciano, M., Tillman, C.M. and G.A. De Leo. 2024. *Sex-specific variation in species interactions matters in ecological communities.* [Trends in Ecology and Evolution](https://www.cell.com/trends/ecology-evolution/abstract/S0169-5347(24)00171-X).
 
