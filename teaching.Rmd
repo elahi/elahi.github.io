@@ -55,16 +55,23 @@ M: 9:30-12:20; 1:30-2:20 \
 Units: 4 \
 Co-taught with Jeremy Goldbogen \
 
+### Introduction to Research in Ecology and Ecological Physiology (OCEANS 47)
+
+This course is a field-based inquiry into rocky intertidal shores at Hopkins Marine Station that introduces students to ecology and environmental physiology and the research methods used to study them. Students will learn how to detect patterns quantitatively in nature through appropriate sampling methods. Following exploration of appropriate background material in class and through exploration of the scientific literature, students will formulate testable hypotheses regarding the underlying causes of the patterns they discern. A variety of different aspects of ecology and physiology will be investigated cooperatively by the students during the quarter, culminating in development of an individual final paper in the form of a research proposal based on data collected during the course. The course will provide a broad conceptual introduction to the underlying biological principles that influence adaptation to dynamic habitats, as well as an inquiry-based experience in how to explore complex systems in nature. This course fulfills the same laboratory requirement as BIO 47. Satisfies WIM in Biology and Earth Systems.
+
+Term: Spring\
+Units: 4\
+UG reqs: WAY-SMA, WIM in Biology and Earth Systems
 
 ### Kelp Forest Ecology (OCEANS 185/285)
 
-This is an experiential field course on the ecology of giant kelp forests. Through daily scuba dives, lectures, and labs, students become acquainted with the common invertebrates, fishes, and seaweeds and how their interactions shape the community. The course has three major components: natural history, ecology, and research. The first portion of the course concentrates on how to recognize the common species, how to identify them if you don’t know who they are, and to learn where they can be found. Second, once students are familiar with the natural history of kelp forest inhabitants, we use that as a springboard to discuss population and community processes that affect both obvious and more subtle differences in patterns of distribution and abundance that can be seen in different kelp forests around the Monterey peninsula. Third, students will formulate and test a hypothesis related to the ecology of kelp forests. We will practice commonly used methods for quantifying the abundance and population structure for a variety of species. The data we collect during the course contribute to on-going time series for the Hopkins Marine Life Observatory, some of which have been conducted for nearly three decades. This course will be held in person at Hopkins Marine Station from 14 July to 14 August, 2025. Prerequisite(s): AAUS scientific diver certification; a course will be offered immediately prior to this class (23 June – 11 July 2025). 
+This is an experiential field course on the ecology of giant kelp forests. Through daily scuba dives, lectures, and labs, students become acquainted with the common invertebrates, fishes, and seaweeds and how their interactions shape the community. The course has three major components: natural history, ecology, and research. The first portion of the course concentrates on how to recognize the common species, how to identify them if you don’t know who they are, and to learn where they can be found. Second, once students are familiar with the natural history of kelp forest inhabitants, we use that as a springboard to discuss population and community processes that affect both obvious and more subtle differences in patterns of distribution and abundance that can be seen in different kelp forests around the Monterey peninsula. Third, students will formulate and test a hypothesis related to the ecology of kelp forests. We will practice commonly used methods for quantifying the abundance and population structure for a variety of species. The data we collect during the course contribute to ongoing time series for the Hopkins Marine Life Observatory, some of which have been conducted for nearly three decades. This course will be held in person at Hopkins Marine Station from 25 June to 25 July, 2025. Prerequisite(s): AAUS scientific diver certification; a separate workshop will be offered immediately prior to this class (13 June to 24 June 2025).
 
 Term: Summer \
 Units: 3 \
 UG reqs: WAY-SMA \
 
-This is a 5-week course and we will meet 8am-5pm, Monday-Friday. You are also expected to work on assignments outside of class. In other words, this course is a full-time commitment. What is it like to be a student in this class? You can learn about the course from a [Stanford report](https://news.stanford.edu/report/2022/08/23/underwater-scientists-investigate-kelp-forests/?utm_source=Stanford+ALL&utm_campaign=48339550ec-int_COPY_02&utm_medium=email&utm_term=0_c042b4aad7-48339550ec-55725232) and from previous students here: <https://purl.stanford.edu/km092my4610>
+This is a month-long course and we will meet 8am-2pm, Monday-Friday. You are also expected to work on assignments outside of class. In other words, this course is a full-time commitment. What is it like to be a student in this class? You can learn about the course from a [Stanford report](https://news.stanford.edu/report/2022/08/23/underwater-scientists-investigate-kelp-forests/?utm_source=Stanford+ALL&utm_campaign=48339550ec-int_COPY_02&utm_medium=email&utm_term=0_c042b4aad7-48339550ec-55725232) and from previous students here: <https://purl.stanford.edu/km092my4610>
 
 This course is open to non-Stanford students as well as post-bac students (i.e., if you have already graduated). You will apply and register through [Stanford Summer Session](https://summer.stanford.edu/). Students will provide, at minimum, their wetsuit, gloves, booties, hood, mask, snorkel, weight belt, and fins. Please reach out if you need a loaner BCD and regulator.
 
@@ -72,21 +79,9 @@ PRIORITY deadline: March 15 (you will be notified of admission by April 1)
 
 FINAL deadline: April 15 (you will be notified of admission by May 1)
 
-[When active, the application is here](xxx)
-
-Need-based [grants](https://summer.stanford.edu/tuition-grants) are available through Stanford Summer Session. If you do not have a current Student Aid Report, you may provide a copy of the [EFC Formula Guide worksheet](https://fsapartners.ed.gov/knowledge-center/library/handbooks-manuals-or-guides/2022-08-10/2023-24-expected-family-contribution-efc-formula-guide). Please contact summersession@stanford.edu for more information. 
+[When active, the application is here](https://forms.gle/1HdF54hnM41FhKTj8)
 
 ![Students surveying a historical transect at Hopkins Marine Station](images/IMG_1322_elahi.JPG)
-
-<!-- ### Introduction to Research in Ecology and Ecological Physiology (BIOHOPK 47, OCEANS 47) -->
-
-<!-- This course is a field-based inquiry into rocky intertidal shores that introduces students to ecology and environmental physiology and the research methods used to study them. Students will learn how to detect patterns quantitatively in nature through appropriate sampling methods. Following exploration of appropriate background material in class and through exploration of the scientific literature, students will formulate testable hypotheses regarding the underlying causes of the patterns they discern. A variety of different aspects of ecology and physiology will be investigated cooperatively by the students during the quarter, culminating in development of an individual final paper in the form of a research proposal based on data collected during the course. The course will provide a broad conceptual introduction to the underlying biological principles that influence adaptation to dynamic habitats, as well as an inquiry-based experience in how to explore complex systems in nature. This course fulfills the same laboratory requirement as BIO 47. -->
-
-<!-- Term: Spring\ -->
-
-<!-- Units: 4\ -->
-
-<!-- UG reqs: WAY-SMA, WIM in Biology -->
 
 <!-- \ -->
 
