@@ -31,7 +31,7 @@ UG reqs: WAY-SMA \
 
 Intermediate course focused on statistical modeling in a Bayesian framework, with applications in the biological and environmental sciences. Topics will include probability, generalized linear models, causal inference, and model comparison. We will take a hands-on, computational approach (R, Stan) to gain intuition so that students can later design their own inferential models. Prerequisites: Introductory statistics course, such as STATS 60, STATS 110, STATS 141, or OCEANS 147; some experience with scientific computing in R, such as STATS 32. 
 
-[Course website](https://elahi.github.io/stats2_site/) \
+<!-- [Course website](https://elahi.github.io/stats2_site/) \ -->
 Term: Winter \
 T, Th: 10:30-12:00 \
 Units: 3 \
