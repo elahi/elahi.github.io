@@ -16,7 +16,7 @@ knitr::opts_chunk$set(echo = TRUE)
 repo_url <- "https://raw.githubusercontent.com/elahi/github.io/master/"
 ```
 
-## Courses (2025)
+## Courses (2026)
 
 ### Between Pacific Tides: Invertebrate Zoology in Monterey Bay (OCEANS 161/261)
 
