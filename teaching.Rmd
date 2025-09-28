@@ -29,7 +29,7 @@ UG reqs: WAY-SMA \
 
 ### Statistical Modeling (OCEANS 140/240)
 
-Intermediate course focused on statistical modeling in a Bayesian framework, with applications in the biological and environmental sciences. Topics will include probability, generalized linear models, causal inference, and model comparison. We will take a hands-on, computational approach (R, Stan) to gain intuition so that students can later design their own inferential models. Prerequisites: Introductory statistics course, such as STATS 60, STATS 110, STATS 141, or OCEANS 147; some experience with scientific computing in R, such as STATS 32. 
+Intermediate course focused on statistical modeling in a Bayesian framework, with applications in the biological and environmental sciences. Topics will include probability, causal inference, and generalized linear models. Classroom activities will be a mix of lecture, discussion, and problem sets. We will take a hands-on, computational approach (R, Stan) to gain intuition so that students can design their own inferential models. Outside of class, students will watch pre-recorded lectures and complete readings. Prerequisites: Introductory statistics course, such as STATS 60, STATS 110, STATS 141 and some experience with scientific computing in R, such as STATS 32.
 
 <!-- [Course website](https://elahi.github.io/stats2_site/) \ -->
 Term: Winter \
@@ -53,19 +53,12 @@ In this course we will study marine biodiversity and the impacts of environmenta
 Term: Spring \
 M: 9:30-12:20; 1:30-2:20 \
 Units: 4 \
-Co-taught with Jeremy Goldbogen \
+Co-taught with Jeremy Goldbogen and Brooke Weigel \
 
-### Introduction to Research in Ecology and Ecological Physiology (OCEANS 47)
-
-This course is a field-based inquiry into rocky intertidal shores at Hopkins Marine Station that introduces students to ecology and environmental physiology and the research methods used to study them. Students will learn how to detect patterns quantitatively in nature through appropriate sampling methods. Following exploration of appropriate background material in class and through exploration of the scientific literature, students will formulate testable hypotheses regarding the underlying causes of the patterns they discern. A variety of different aspects of ecology and physiology will be investigated cooperatively by the students during the quarter, culminating in development of an individual final paper in the form of a research proposal based on data collected during the course. The course will provide a broad conceptual introduction to the underlying biological principles that influence adaptation to dynamic habitats, as well as an inquiry-based experience in how to explore complex systems in nature. This course fulfills the same laboratory requirement as BIO 47. Satisfies WIM in Biology and Earth Systems.
-
-Term: Spring\
-Units: 4\
-UG reqs: WAY-SMA, WIM in Biology and Earth Systems
 
 ### Kelp Forest Ecology (OCEANS 185/285)
 
-This is an experiential field course on the ecology of giant kelp forests. Through daily scuba dives, lectures, and labs, students become acquainted with the common invertebrates, fishes, and seaweeds and how their interactions shape the community. The course has three major components: natural history, ecology, and research. The first portion of the course concentrates on how to recognize the common species, how to identify them if you don’t know who they are, and to learn where they can be found. Second, once students are familiar with the natural history of kelp forest inhabitants, we use that as a springboard to discuss population and community processes that affect both obvious and more subtle differences in patterns of distribution and abundance that can be seen in different kelp forests around the Monterey peninsula. Third, students will formulate and test a hypothesis related to the ecology of kelp forests. We will practice commonly used methods for quantifying the abundance and population structure for a variety of species. The data we collect during the course contribute to ongoing time series for the Hopkins Marine Life Observatory, some of which have been conducted for nearly three decades. This course will be held in person at Hopkins Marine Station from 25 June to 25 July, 2025. Prerequisite(s): AAUS scientific diver certification; a separate workshop will be offered immediately prior to this class (13 June to 24 June 2025).
+This is an experiential field course on the ecology of giant kelp forests. Through daily scuba dives, lectures, and labs, students become acquainted with the common invertebrates, fishes, and seaweeds and how their interactions shape the community. The course has three major components: natural history, ecology, and research. The first portion of the course concentrates on how to recognize the common species, how to identify them if you don’t know who they are, and to learn where they can be found. Second, once students are familiar with the natural history of kelp forest inhabitants, we use that as a springboard to discuss population and community processes that affect both obvious and more subtle differences in patterns of distribution and abundance that can be seen in different kelp forests around the Monterey peninsula. Third, students will formulate and test a hypothesis related to the ecology of kelp forests. We will practice commonly used methods for quantifying the abundance and population structure for a variety of species. The data we collect during the course contribute to ongoing time series for the Hopkins Marine Life Observatory, some of which have been conducted for  three decades. This course will be held in person at Hopkins Marine Station from 29 June to 24 July, 2026. Prerequisite(s): AAUS scientific diver certification; a separate workshop will be offered immediately prior to this class (15 June to 26 June 2026).
 
 Term: Summer \
 Units: 3 \
@@ -82,6 +75,16 @@ FINAL deadline: April 15 (you will be notified of admission by May 1)
 [When active, the application is here](https://forms.gle/1HdF54hnM41FhKTj8)
 
 ![Students surveying a historical transect at Hopkins Marine Station](images/IMG_1322_elahi.JPG)
+
+
+<!-- ### Introduction to Research in Ecology and Ecological Physiology (OCEANS 47) -->
+
+<!-- This course is a field-based inquiry into rocky intertidal shores at Hopkins Marine Station that introduces students to ecology and environmental physiology and the research methods used to study them. Students will learn how to detect patterns quantitatively in nature through appropriate sampling methods. Following exploration of appropriate background material in class and through exploration of the scientific literature, students will formulate testable hypotheses regarding the underlying causes of the patterns they discern. A variety of different aspects of ecology and physiology will be investigated cooperatively by the students during the quarter, culminating in development of an individual final paper in the form of a research proposal based on data collected during the course. The course will provide a broad conceptual introduction to the underlying biological principles that influence adaptation to dynamic habitats, as well as an inquiry-based experience in how to explore complex systems in nature. This course fulfills the same laboratory requirement as BIO 47. Satisfies WIM in Biology and Earth Systems. -->
+
+<!-- Term: Spring\ -->
+<!-- Units: 4\ -->
+<!-- UG reqs: WAY-SMA, WIM in Biology and Earth Systems -->
+
 
 <!-- \ -->
 

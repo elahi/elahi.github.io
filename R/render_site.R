@@ -1,5 +1,6 @@
 ##' Robin Elahi
 ##' 22 Nov 2018
-##' Run `source('R/render_site.R')` 
+##' Run 
 library(rmarkdown)
 rmarkdown::render_site()
+#source('R/render_site.R')
